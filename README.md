@@ -1,4 +1,4 @@
-# Dlaca Frontend
+# Aimesoft Frontend
 
 {A brief description of your project...}
 
