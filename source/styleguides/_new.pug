@@ -1,0 +1,8 @@
+mixin news({day, title, href, des, image})
+  .new__item
+    a.new__image-wrapper(href= href ? href : '#') 
+        img.new__image(src=`../images/${image}`, alt="")
+    p.new__date #{day}
+    a.new__title(href= href ? href : '#') #{title}
+    p.new__des #{des}
+    a.new__readmore(href= href ? href : '#') Đọc tiếp  

@@ -1,0 +1,26 @@
+//-------------------------------------------------------
+//- Styleguides :: Buttons
+//-------------------------------------------------------
+
+//- Buttons :: Type
+h2 Buttons Type
+-
+  var buttonTypes = [
+    { type: 'primary' },
+    { type: 'secondary' }
+  ];
+.row
+  each val in buttonTypes
+    .col-4
+      .code-example
+        .demo
+          +buttons({
+            text: 'My button',
+            type: val.type
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: '#{val.type}'
+            | })

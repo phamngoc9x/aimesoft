@@ -1,0 +1,65 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Colors
+// Modifier variables of Boostrap 4
+// Detail: https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
+
+$white: #fff;
+$white-light: #f9faff;
+$white-light2: #f8f8f8;
+$black: #000;
+$black-dark: #150035;
+$black-darker: #11223f;
+$black-light: #4a4a4a;
+$blue: #39a1ff;
+$blue-dark: #3145f4;
+$gray: #979797;
+$gray-dark: #818383;
+
+// Fonts
+@font-face {
+  font-family: SVN-ProductSans;
+  src: url('../fonts/SVN-ProductSansRegular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SVN-ProductSans;
+  src: url('../fonts/SVN-ProductSansItalic');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SVN-ProductSans;
+  src: url('../fonts/SVN-ProductSansBold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: SVN-ProductSans;
+  src: url('../fonts/SVN-ProductSansBoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+$font-family-base: 'SVN-ProductSans';
+$font-family-roboto : 'Roboto', sans-serif;
+$font-size-base: 14px;
+
+
+// font-weight
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+// border-radius
+$border-radius-base: 4px;
+$border-radius-circle: 50%;
+
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';

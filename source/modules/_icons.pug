@@ -1,0 +1,16 @@
+//-------------------------------------------------------
+//- Modules :: Icons
+//-------------------------------------------------------
+    
+mixin icons({iconFont, iconSize, iconColor, iconClass})
+  i(
+    class= iconClass ? `${iconClass}` : null
+    class= iconFont ? `${iconFont}` : null
+    class= iconSize ? `icon--${iconSize}` : null
+    class= iconColor ? `icon--${iconColor}` : null)
+
+mixin icon-images({iconImage, imageClass})
+  img(
+    src= `./images/${iconImage}`
+    class= imageClass ? `${imageClass}` : null
+    )

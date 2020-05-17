@@ -1,0 +1,391 @@
+// ======================================================
+// Pages :: Home
+// ======================================================
+
+.aime {
+  $root: &;
+
+  &-hero {
+    background-color: $blue;
+    height: 674px;
+
+    &__title {
+      font-size: $font-size-base + 34;
+      text-align: center;
+      line-height: 1.19;
+      text-shadow: 1px 1px $white;
+      color: $black-dark;
+      font-weight: $font-weight-bold;
+      padding-top: 59px;
+    }
+  }
+
+  &-intro {
+    padding-bottom: 50px;
+
+    &__left {
+      padding-top: 150px;
+
+      @include respond-to(tablet-and-down) {
+        padding-top: 40px;
+      }
+
+      .aime-text {
+        margin-bottom: 36px;
+        line-height: 1.71;
+        padding-right: 72px;
+      }
+    }
+  }
+
+  &-ecosystem {
+    background-color: $white-light;
+    padding: 56px 0 36px 0;
+
+    .aime-text {
+      margin-bottom: 30px;
+    }
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+  }
+
+  &-technologies {
+    padding: 92px 0 173px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .aime-text {
+      margin: 2px 0 42px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-services {
+    padding: 116px 0 154px;
+    background-color: $white-light;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .aime-text {
+      margin: 2px 0 95px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-more-info {
+    padding: 125px 0 134px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .image-right {
+      margin-top: 100px;
+
+      @include respond-to(large-desktop-and-down) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-testimonial {
+    background-color: $blue;
+    padding: 137px 0 161px;
+
+    @include respond-to(tablet-and-down) {
+      padding: 35px 0;
+    }
+
+    .color-white {
+      color: $white;
+      margin-bottom: 46px;
+    }
+  }
+
+  &-blog {
+    padding: 160px 0 237px;
+
+    @include respond-to(tablet-and-down) {
+      padding: 35px 0;
+    }
+  }
+}
+
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  &__item {
+    flex: 0 0 50%;
+    padding: 14px 10px;
+
+    @include respond-to(smallphone-and-down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    border-radius: $border-radius-base + 4;
+    overflow: hidden;
+    box-shadow: 0 20px 60px 0 rgba($color: $blue-dark, $alpha: .1);
+    height: 100%;
+  }
+
+  &__info {
+    padding: 34px 40px 59px;
+  }
+
+  &__title {
+    font-size: $font-size-base + 6;
+    color: $black-darker;
+    font-weight: $font-weight-bold;
+    line-height: 1.5;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $black-darker;
+    line-height: 2;
+    padding: 10px 0 25px;
+  }
+
+  &__images {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 170px;
+    }
+  }
+}
+
+.services-step {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 20%;
+    padding: 10px;
+
+    @include respond-to(tablet-and-down) {
+      flex: 0 0 33.33%;
+    }
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 50%;
+    }
+
+    @include respond-to(tinyphone-and-down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    background-color: $blue;
+    border-radius: $border-radius-base + 4;
+    min-height: 245px;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  &__number {
+    font-size: $font-size-base + 34;
+    font-weight: $font-weight-bold;
+    line-height: 1.19;
+    margin: 66px 0 8px;
+    color: $white;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__text {
+    font-size: $font-size-base + 2;
+    line-height: 1.56;
+    color: $white;
+  }
+}
+
+.icon-box {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  &__images {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius-base;
+  }
+
+  &__text {
+    padding-right: 10px;
+    line-height: 2.88;
+    font-size: $font-size-base + 2;
+  }
+
+  &--outline {
+    .icon-box__images {
+      background-color: transparent;
+      border: solid .5px $gray;
+    }
+  }
+}
+
+.testimonial-slider {
+  &__inner {
+    background-color: $white;
+    width: 620px;
+    max-width: 100%;
+    min-height: 511px;
+    border-radius: $border-radius-base + 4;
+    box-shadow: 15px 20px 50px 10px rgba($color: $black, $alpha: .07);
+    padding: 31px 80px 100px;
+    text-align: center;
+
+    @include respond-to(tablet-and-down) {
+      width: 400px;
+      padding: 30px;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      width: 270px;
+      padding: 30px 15px;
+    }
+  }
+
+  &__images {
+    border-radius: $border-radius-circle;
+    margin: 0 auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: $font-size-base+ 12;
+    font-weight: $font-weight-bold;
+    color: $black-dark;
+    margin: 18px 0 6px;
+  }
+
+  &__position {
+    color: $gray-dark;
+    font-size: $font-size-base - 1;
+    line-height: 1.85;
+  }
+
+  &__say {
+    text-align: left;
+    font-size: $font-size-base + 2;
+    line-height: 1.69;
+    margin-top: 36px;
+
+    @include respond-to(tablet-and-down) {
+      margin-top: 16px;
+    }
+  }
+
+  .flipster__button {
+    color: $white;
+
+    @include respond-to(smallphone-and-down) {
+      color: $black-light;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.brand-logo {
+  padding-top: 100px;
+  max-width: 740px;
+  margin: 0 auto;
+
+  @include respond-to(tablet-and-down) {
+    padding-top: 30px;
+  }
+}
+
+.blog-list {
+  margin: 52px -10px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(tablet-and-down) {
+    margin-top: 10px;
+  }
+
+  &__item {
+    padding: 10px;
+    flex: 0 0 33.33%;
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 50%;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__inner {
+    border-radius: $border-radius-base + 4;
+    overflow: hidden;
+    box-shadow: 0 20px 60px 0 rgba($color: $blue-dark, $alpha: .1);
+    height: 100%;
+  }
+
+  &__images {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 177px;
+    }
+  }
+
+  &__info {
+    padding: 32px 20px 47px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    line-height: 1.75;
+    color: $black-darker;
+    margin-bottom: 12px;
+  }
+
+  &__date {
+    font-family: $font-family-roboto;
+    font-size: $font-size-base -2;
+    line-height: 2;
+    color: $gray;
+  }
+}

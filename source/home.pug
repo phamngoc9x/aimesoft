@@ -1,0 +1,249 @@
+extends layout/_default
+
+block head
+  +head('Aimesoft - Home')
+
+block main 
+  .aime-hero
+    .container
+      h2.aime-hero__title Transform your business 
+        br
+        |with the power of Multimodal AI
+      button.button-play
+        .button-play__content
+          .button-play__icon
+  .aime-intro
+    .aime-container-mini
+      .row
+        .col-md-6.aime-intro__left
+          h2.aime-title.pb-2 Multimodal AI
+          p.aime-text Established in 2018, Aimesoft has defined our vision to become a leading company in providing AI services and solutions to the global market.
+          .d-flex.align-items-center
+            +buttons-link({
+              btnType:'blue',
+              btnSize:'large',
+              text:'CHI TIẾT'
+            }).mw-140.mr-4
+            +buttons-link({
+              btnType:'transparent',
+              text:'VỀ AIMESOFT'
+            }).pl-2
+        .col-md-6.aime-intro__right.pt-4.pt-md-0
+          img(src='http://via.placeholder.com/465x415.png', alt='img intro').mw-100
+  .aime-ecosystem
+    .container.text-center
+      h2.aime-title.mb-0 Aimenicon Ecosystem
+      p.aime-text Aimenicorn is a Multimodal AI ecosystem developed by Aimesoft 
+      img(src='http://via.placeholder.com/541x465.png', alt='img intro').mw-100
+  .aime-technologies
+    .container.text-center
+      h2.aime-title Technologies
+      p.aime-text Aimesoft’s technologies to realize Multimodal AI 
+    .aime-container-mini
+      ul.technologies-list
+        li.technologies-list__item
+          .technologies-list__content
+            .technologies-list__images
+              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+            .technologies-list__info
+              .technologies-list__title Xử Lý Ảnh
+              .technologies-list__text Phân mảnh, lý giải hình ảnh, nhận diện khuôn mặt, nhận diện tuổi, giới tính, nhận diện chữ viết, tìm kiếm dựa trên hình ảnh, phân tích dự đoán dựa trên ảnh
+              +buttons-link({
+                btnType:'transparent',
+                text:'XEM THÊM'
+              })
+        li.technologies-list__item
+          .technologies-list__content
+            .technologies-list__images
+              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+            .technologies-list__info
+              .technologies-list__title Xử lý ngôn ngữ tự nhiên
+              .technologies-list__text Tách từ, gán nhãn từ loại, tìm từ khoá, từ gần nghĩa, cùng nghĩa, đối lập ngữ nghĩa, phân tích và trích xuất thông tin, trích xuất quan hệ, tìm kiếm dựa trên quan hệ, lý giải ngôn ngữ tự nhiên
+              +buttons-link({
+                btnType:'transparent',
+                text:'XEM THÊM'
+              })
+        li.technologies-list__item
+          .technologies-list__content
+            .technologies-list__images
+              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+            .technologies-list__info
+              .technologies-list__title Xử lý tiếng nói
+              .technologies-list__text Xây dựng mô hình ngôn ngữ, mô hình âm học, tự động nhận diện hot word (trigger word), lọc nhiễu.
+              +buttons-link({
+                btnType:'transparent',
+                text:'XEM THÊM'
+              })
+        li.technologies-list__item
+          .technologies-list__content
+            .technologies-list__images
+              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+            .technologies-list__info
+              .technologies-list__title Phân tích dữ liệu
+              .technologies-list__text Thu thập và xử lý dữ liệu rất lớn, dự đoán KPI, phân tích dự đoán dựa trên dữ liệu lớn, tự động sinh dữ liệu cho học máy.
+              +buttons-link({
+                btnType:'transparent',
+                text:'XEM THÊM'
+              })
+  .aime-services
+    .container.text-center
+      h2.aime-title Our End-to-End AI Services
+      p.aime-text Các giải pháp của Aimesoft dựa trên Trí tuệ nhân tạo đa thể thức
+    .container  
+      ul.services-step
+        li.services-step__item
+          .services-step__content
+            .services-step__icon
+              img(src='http://via.placeholder.com/36x36.png', alt='step')
+            .services-step__number 1
+            .services-step__text Discover and 
+              br
+              |understand the insights
+        li.services-step__item
+          .services-step__content
+            .services-step__icon
+              img(src='http://via.placeholder.com/36x36.png', alt='step')
+            .services-step__number 2
+            .services-step__text Consult
+              br
+              |(Give avisory)
+        li.services-step__item
+          .services-step__content
+            .services-step__icon
+              img(src='http://via.placeholder.com/36x36.png', alt='step')
+            .services-step__number 3
+            .services-step__text PoC 
+              br
+              |(Solutions and Analysis)
+        li.services-step__item
+          .services-step__content
+            .services-step__icon
+              img(src='http://via.placeholder.com/36x36.png', alt='step')
+            .services-step__number 4
+            .services-step__text Deployment
+        li.services-step__item
+          .services-step__content
+            .services-step__icon
+              img(src='http://via.placeholder.com/36x36.png', alt='step')
+            .services-step__number 5
+            .services-step__text Evaluation 
+              br
+              | & Support
+  .aime-more-info
+    .aime-container-mini
+      .col-sm-4
+        h2.aime-title.mb-3.mb-md-5 Our product
+        ul.icon-box.icon-box--outline
+          -
+            var listIcon= ['AimeHotel', 'AimeReception', 'AimeAIshop', 'AimeHospital']
+          each item in listIcon
+            li.icon-box__item.d-flex
+              .icon-box__images
+                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+              .icon-box__text=item
+        +buttons-link({
+          btnType:'blue',
+          btnSize:'large',
+          text:'XEM TẤT CẢ'
+        }).mt-5.mb-5.mw-157.d-inline-block
+      .col-sm-4
+        h2.aime-title.mb-3.mb-md-5 Our solution
+        ul.icon-box
+          -
+            var listIcon= ['AimeCard','Aimelytics','AimeStats','AimeFluent','AimeFace','AimeSpeech']
+          each item in listIcon
+            li.icon-box__item.d-flex
+              .icon-box__images
+                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+              .icon-box__text=item
+        +buttons-link({
+          btnType:'blue',
+          btnSize:'large',
+          text:'XEM TẤT CẢ'
+        }).mt-5.mw-157.d-inline-block
+      .col-sm-4
+        img(src='http://via.placeholder.com/546x479.png', alt='icon').image-right
+  .aime-testimonial
+    .container
+      h2.aime-title.text-center.color-white Success Stories
+      .testimonial-slider
+        ul
+          li.testimonial-slider__item
+            .testimonial-slider__inner
+              .testimonial-slider__images
+                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+              h3.testimonial-slider__name Eugenia Schultz
+              span.testimonial-slider__position CEO, Amazon Cloud Service
+              p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
+          li.testimonial-slider__item
+            .testimonial-slider__inner
+              .testimonial-slider__images
+                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+              h3.testimonial-slider__name Eugenia Schultz
+              span.testimonial-slider__position CEO, Amazon Cloud Service
+              p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
+          li.testimonial-slider__item
+            .testimonial-slider__inner
+              .testimonial-slider__images
+                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+              h3.testimonial-slider__name Eugenia Schultz
+              span.testimonial-slider__position CEO, Amazon Cloud Service
+              p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
+      .brand-logo.d-flex.flex-wrap.justify-content-between.align-items-center
+        a(href='#').brand-logo__link
+          img(src='http://via.placeholder.com/87x19.png', alt='logo brand').brand-logo__item
+        a(href='#').brand-logo__link
+          img(src='http://via.placeholder.com/81x23.png', alt='logo brand').brand-logo__item
+        a(href='#').brand-logo__link
+          img(src='http://via.placeholder.com/116x44.png', alt='logo brand').brand-logo__item
+        a(href='#').brand-logo__link
+          img(src='http://via.placeholder.com/107x35.png', alt='logo brand').brand-logo__item
+        a(href='#').brand-logo__link
+          img(src='http://via.placeholder.com/180x24.png', alt='logo brand').brand-logo__item
+  .aime-blog
+    h2.aime-title.text-center.mb-0 News & Blog
+    .aime-container-mini
+      ul.blog-list
+        li.blog-list__item
+          .blog-list__inner
+            .blog-list__images
+               img(src='http://via.placeholder.com/300x177.png', alt='blog').
+            .blog-list__info
+              .blog-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
+              .blog-list__date 12 Mar 2020
+        li.blog-list__item
+          .blog-list__inner
+            .blog-list__images
+               img(src='http://via.placeholder.com/300x177.png', alt='blog').
+            .blog-list__info
+              .blog-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
+              .blog-list__date 12 Mar 2020
+        li.blog-list__item
+          .blog-list__inner
+            .blog-list__images
+               img(src='http://via.placeholder.com/300x177.png', alt='blog').
+            .blog-list__info
+              .blog-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
+              .blog-list__date 12 Mar 2020
+
+            
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+    
+          
+    
+
+

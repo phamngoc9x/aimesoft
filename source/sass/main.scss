@@ -1,0 +1,47 @@
+// We architecting this project follow as the '7-1 Pattern' (7 folders, 1 file)
+// For more detail about this pattern
+// (https://sass-guidelin.es/#the-7-1-pattern)
+
+@import url('http://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+
+// 1. Vendors
+// ----------
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#sass
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap';
+
+// 2. Extensions
+// ------------
+@import 'extensions/flipster/jquery.flipster.min';
+
+// 3. Abstracts
+// ------------
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 4. Base
+// -------
+@import 'base/global';
+@import 'base/typography';
+@import 'base/colors';
+
+// 5. Layout
+// ---------
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/content';
+
+// 6. Components
+// -------------
+@import 'components/buttons';
+@import 'components/icons';
+
+// 7. Pages
+// --------
+@import 'pages/home';
+
+// 8. Themes
+// ---------
+// We just have only 1 theme in this project

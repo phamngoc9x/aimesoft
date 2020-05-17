@@ -1,0 +1,49 @@
+// ======================================================
+// Base :: Global
+// ======================================================
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  color: $black-light;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+%wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+
+  @include respond-to(desktop-and-down) {
+    padding: 0 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $black-light;
+  transition: all .2s ease;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $blue;
+  }
+}

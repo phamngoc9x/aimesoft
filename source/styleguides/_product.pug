@@ -1,0 +1,35 @@
+mixin product({image, name, href, oldPrice, newPrice, sale, isNew, size, custom})
+  .product__item(
+      class= size ? `product__item--${size}` : null
+      class= custom ? `${custom}` : null
+      )
+    .product__image-wrapper
+      a(href= href ? href : '#')
+        img.product__image(src=`../images/${image}`, alt="")
+      .product__overlay
+        .product__actions
+          +buttons({
+            text: "MUA NGAY",
+            btnClass: 'product__buy'
+          })
+          +buttons-link({
+            btnClass: 'product__search',
+            iconClass: 'product__icon',
+            iconFont: 'fas fa-search',
+            iconSize: 'md',
+            iconColor: 'black'
+          })
+      if (sale !== '' && sale !== undefined)
+        p.product__sale -#{sale}%
+      if (isNew == true) 
+        p.product__new New
+    .product__info.text-center
+      a.product__name(href= href ? href : '#') #{name}
+      .product__star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star-half
+      p.product__price #{newPrice} đ
+        span.product__del #{oldPrice} đ

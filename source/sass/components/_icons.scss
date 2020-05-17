@@ -1,0 +1,15 @@
+// ======================================================
+// Components :: Icons
+// ======================================================
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: $black-light;
+  transition: all .2s ease;
+
+  &--fb {
+    mask-image: url('../images/icon-fb.svg');
+  }
+}

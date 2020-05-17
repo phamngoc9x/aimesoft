@@ -1,0 +1,30 @@
+//-------------------------------------------------------
+//- Modules :: Buttons
+//-------------------------------------------------------
+
+mixin buttons-link({ href, text, btnType, btnSize, btnClass, iconImg, Icon, iconColor, iconClass, iconImage, imageClass })
+  a(
+    class= btnClass ? `${btnClass}` : null
+    class= btnType ? `button--${btnType}` : null
+    class= btnSize ? `button--${btnSize}` : null
+    href= href ? href : '#'
+    role= 'button' 
+  )&attributes(attributes)
+    | #{text}
+    if (iconFont !== '' && iconFont !== undefined)
+      +icons({iconFont, iconSize, iconColor, iconClass})
+    if (iconImage !== '' && iconImage !== undefined)
+      +icon-images({iconImage, imageClass})
+    
+mixin buttons({ text, btnType, btnSize, btnClass, iconImg, iconSize, iconColor, iconClass, iconImage, imageClass })
+  button.btn(
+    class= btnClass ? `${btnClass}` : null
+    class= btnType ? `button--${btnType}` : null
+    class= btnSize ? `button--${btnSize}` : null
+    role= 'button' 
+  )&attributes(attributes)
+    if (iconFont !== '' && iconFont !== undefined)
+      +icons({iconFont, iconSize, iconColor, iconClass})
+    if (iconImage !== '' && iconImage !== undefined)
+      +icon-images({iconImage, imageClass})
+    | #{text}

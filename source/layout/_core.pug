@@ -1,0 +1,18 @@
+include ../modules/_head
+include ../modules/_footer
+include ../modules/_plugin
+include ../modules/_buttons
+include ../modules/_icons
+include ../modules/page-list/_page-list
+
+
+
+doctype html
+html(lang='en')
+  head
+    block head
+  body
+    block body
+    +plugins()
+    block footer
+      +footer()

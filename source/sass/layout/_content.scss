@@ -1,0 +1,84 @@
+// ======================================================
+// Layout :: Content
+// ======================================================
+
+.aime {
+  &-container {
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+    @include respond-to(desktop-and-down) {
+      padding: 0 15px;
+    }
+  }
+
+  &-container-mini {
+    max-width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+    @include respond-to(desktop-and-down) {
+      padding: 0 15px;
+    }
+  }
+
+  &-content {
+    padding-top: 60px;
+  }
+
+  &-title {
+    font-size: $font-size-base + 26;
+    color: $black-dark;
+    font-weight: $font-weight-bold;
+    line-height: 1.43;
+  }
+
+  &-text {
+    line-height: 1.5;
+    font-size: $font-size-base + 2;
+  }
+}
+
+.button-play {
+  background-color: transparent;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:focus {
+    outline: none;
+  }
+
+  &__content {
+    height: 93px;
+    width: 93px;
+    border-radius: $border-radius-circle;
+    background-color: rgba($color: $blue, $alpha: .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 30px;
+    background-color: $white;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+  }
+}
+
+.mw-140 {
+  min-width: 140px;
+}
+
+.mw-157 {
+  min-width: 157px;
+}

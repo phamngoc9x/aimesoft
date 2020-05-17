@@ -1,0 +1,81 @@
+// ======================================================
+// Layout :: Footer
+// ======================================================
+
+.footer {
+  padding: 75px 0;
+  background-color: $white-light2;
+
+  @include respond-to(tablet-and-down) {
+    padding: 35px 0;
+  }
+
+  &__info {
+    width: 100%;
+    margin-bottom: 68px;
+
+    @include respond-to(tablet-and-down) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__line {
+    margin: 72px 0 50px;
+
+    @include respond-to(tablet-and-down) {
+      margin: 20px 0 10px;
+    }
+  }
+}
+
+.list-link {
+  &__item {
+    a {
+      display: block;
+      padding: 4px 0;
+      line-height: 1.67;
+      font-size: $font-size-base + 4;
+      color: $black-darker;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.language-select {
+  border: 1px solid $blue;
+  padding: 9px 15px;
+  border-radius: $border-radius-base + 4;
+  color: $blue;
+  background-color: transparent;
+
+  @include respond-to(tablet-and-down) {
+    margin-top: 15px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__vi {
+    background-image: url('http://via.placeholder.com/18x18.png');
+  }
+}
+
+.info-list {
+  position: relative;
+  margin-left: -27px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__icon {
+    width: 20px;
+    margin-right: 7px;
+  }
+}
