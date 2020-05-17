@@ -33,7 +33,7 @@ var options = {
   browserSync: {
     server: {
       baseDir: baseDirs.dest,
-      index: 'links.html'
+      index: 'index.html'
     }
   },
   htmlPrettify: {
