@@ -1,10 +1,14 @@
-# global context
 [build]
+  command = "npm run build"
   publish = "dist"
-  command = "gulp build"
-# build a preview (optional)
-[context.deploy-preview]
-  command = "gulp build-preview"
-# build a branch with debug (optional)
-[context.branch-deploy]
-  command = "gulp build-debug"
+  functions = "src/functions"
+  NODE_ENV = "10.15.3"
+
+[dev]
+  command = "npm run start"
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
