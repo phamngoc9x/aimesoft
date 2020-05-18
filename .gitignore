@@ -1,5 +1,5 @@
 node_modules/
-Dlaca/
+dest/
 tmp/
 .vscode/
 .DS_Store
