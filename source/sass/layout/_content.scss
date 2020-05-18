@@ -36,6 +36,10 @@
     color: $black-dark;
     font-weight: $font-weight-bold;
     line-height: 1.43;
+
+    @include respond-to(smallphone-and-down) {
+      font-size: $font-size-base + 16;
+    }
   }
 
   &-text {
@@ -65,13 +69,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &__icon {
+    margin-left: 8px;
     width: 32px;
     height: 30px;
     background-color: $white;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
+  }
+}
+
+.bg {
+  &-white-light {
+    background-color: $white-light;
+  }
+
+  &-blue {
+    background-color: $blue;
   }
 }
 

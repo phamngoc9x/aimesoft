@@ -1,0 +1,142 @@
+// ======================================================
+// Pages :: Home
+// ======================================================
+
+.aime {
+  $root: &;
+
+  &-hero-intro {
+    background-image: url('http://via.placeholder.com/1920x450.png');
+    height: 450px;
+    background-size: cover;
+    position: relative;
+
+    .button-play {
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &__content {
+        background-color: rgba($color: $white, $alpha: .4);
+      }
+    }
+  }
+
+  &-eco {
+    padding: 68px 0 121px;
+
+    @include respond-to(tablet-and-down) {
+      padding: 35px 0;
+    }
+
+    .aime-text {
+      max-width: 558px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__image {
+      margin-top: 56px;
+
+      @include respond-to(tablet-and-down) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &-technologies-intro {
+    padding: 95px 0 135px;
+
+    @include respond-to(tablet-and-down) {
+      padding: 35px 0;
+    }
+
+    .aime-text {
+      margin-bottom: 40px;
+
+      @include respond-to(tablet-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.tech-list {
+  &__image {
+    flex: 0 0 50%;
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    flex: 0 0 50%;
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__item {
+    padding: 43px 0;
+
+    @include respond-to(tablet-and-down) {
+      padding: 20px 0;
+    }
+  }
+
+  &__title {
+    color: $black-darker;
+    font-size: $font-size-base + 6;
+    font-weight: $font-weight-bold;
+    margin: 20px 0 18px;
+  }
+
+  &__text {
+    line-height: 2;
+    font-size: $font-size-base + 1;
+    color: $black-darker;
+  }
+
+  .text-left {
+    padding-left: 37px;
+
+    @include respond-to(tablet-and-down) {
+      padding-left: 15px;
+    }
+
+    @include respond-to(phone-and-down) {
+      padding-left: 0;
+    }
+
+    .tech-list__text {
+      padding-right: 81px;
+
+      @include respond-to(tablet-and-down) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .text-right {
+    padding-right: 37px;
+
+    @include respond-to(tablet-and-down) {
+      padding-right: 15px;
+    }
+
+    @include respond-to(phone-and-down) {
+      padding-right: 0;
+      order: 2;
+      text-align: left !important; /* stylelint-disable-line */
+    }
+
+    .tech-list__text {
+      padding-left: 81px;
+
+      @include respond-to(tablet-and-down) {
+        padding-left: 0;
+      }
+    }
+  }
+}

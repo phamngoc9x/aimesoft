@@ -8,6 +8,14 @@
       {
         "title": "Home",
         "url": "home"
+      },
+      {
+        "title": "Intro",
+        "url": "intro"
+      },
+      {
+        "title": "Service",
+        "url": "service"
       }
     ]
   }

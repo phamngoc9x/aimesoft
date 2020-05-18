@@ -1,0 +1,37 @@
+extends layout/_default
+
+block head
+  +head('Aimesoft - Service')
+
+block main 
+  .aime-hero-intro
+  .aime-eco.bg-white-light
+    .container
+      h2.aime-title.text-center.pb-2 Our services
+      p.aime-text At Aimesoft, we provide end-to-end Multimodal AI integrated solutions across a wide range of industries such as Healthcare, Hospitality, Transportation, etc. In addition to  developing AI-powered products, we provide consulting services to enable companies to understand, evaluate and adopt Artificial Intelligence. With a team of dedicated and leading AI experts, we have assisted numerous enterprises to achieve breakthroughs in their development journey
+  .aime-product
+    .aime-container-mini
+      .col-sm-6.p-0
+        h2.aime-title.mb-3.mb-md-5 AI Consulting
+        img(src='http://via.placeholder.com/410x326.png', alt='icon').pt-2.mt-2
+      .col-sm-6.p-0
+        h2.aime-title.mb-3.mb-md-5 AI Products
+        .row
+          .col-sm-6
+            ul.icon-box.icon-box--outline
+              -
+                var listIcon= ['AimeHotel', 'AimeReception', 'AimeCard', 'AimeAIshop', 'AimeStats', 'AimeSpeech']
+              each item in listIcon
+                li.icon-box__item.d-flex
+                  .icon-box__images
+                    img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                  .icon-box__text=item
+          .col-sm-6
+            ul.icon-box.icon-box--outline
+              -
+                var listIcon= ['AimeHospital', 'AimeFluent', 'AimeFace', 'Aimelytics']
+              each item in listIcon
+                li.icon-box__item.d-flex
+                  .icon-box__images
+                    img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                  .icon-box__text=item
