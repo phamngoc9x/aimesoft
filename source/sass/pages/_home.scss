@@ -233,7 +233,7 @@
 
   &__images {
     height: 60px;
-    width: 60px;
+    flex: 0 0 60px;
     margin-right: 20px;
     background-color: $primary;
     display: flex;
@@ -246,6 +246,13 @@
     padding-right: 10px;
     line-height: 2.88;
     font-size: $font-size-base + 2;
+  }
+
+  &__title {
+    font-size: $font-size-base + 6;
+    color: $black-darker;
+    font-weight: $font-weight-bold;
+    line-height: 1.3;
   }
 
   &--outline {
@@ -387,5 +394,16 @@
     font-size: $font-size-base -2;
     line-height: 2;
     color: $gray;
+  }
+}
+
+.text-list {
+  padding-left: 80px;
+  margin-bottom: 10px;
+
+  &__item {
+    display: block;
+    font-size: $font-size-base + 2;
+    line-height: 2.44;
   }
 }

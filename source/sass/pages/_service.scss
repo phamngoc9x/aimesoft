@@ -8,4 +8,71 @@
   &-product {
     padding: 85px 0 90px;
   }
+
+  &-expertise {
+    padding: 96px 0 110px;
+  }
+
+  &-process {
+    .icon-box__item {
+      padding: 0;
+      margin-bottom: 160px;
+    }
+
+    .icon-box__title {
+      font-size: $font-size-base + 2;
+    }
+  }
+}
+
+.text-icon {
+  margin: 5px 0 15px;
+  padding-left: 25px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: '';
+    height: 12px;
+    width: 12px;
+    border-radius: $border-radius-circle;
+    background-color: $blue;
+    display: inline-block;
+    margin-right: 13px;
+  }
+}
+
+.arrow-step {
+  position: absolute;
+  height: calc(100% - 60px);
+  width: 1px;
+  border-left: 1px dashed;
+  color: $black-darker;
+  top: 60px;
+  left: 45px;
+
+  &:before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: $border-radius-circle;
+    border: 1px solid $black-darker;
+    position: absolute;
+    top: -7px;
+    left: -8px;
+    background-color: $white;
+  }
+
+  &:after {
+    content: '';
+    height: 12px;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    background-color: $black-darker;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+  }
 }
