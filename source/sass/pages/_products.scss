@@ -4,4 +4,111 @@
 
 .aime {
   $root: &;
+  &-our-product {
+    padding-top: 68px;
+
+    .aime-title {
+      padding-bottom: 80px;
+    }
+  }
+
+  &-our-solution {
+    padding: 80px 0 210px;
+
+    .aime-title {
+      padding-bottom: 87px;
+    }
+  }
+
+  &-our-brand {
+    padding: 160px 0 164px;
+
+    .brand-logo {
+      padding-top: 58px;
+    }
+  }
+}
+
+.product-content {
+  margin-bottom: 42px;
+
+  &__left {
+    position: relative;
+    flex: 0 0 410px;
+    padding-right: 10px;
+
+    .icon-box__images {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      background-color: $white;
+    }
+  }
+
+  &__right {
+    flex: 0 0 405px;
+    padding-left: 25px;
+  }
+
+  &__title {
+    font-size: $font-size-base + 12;
+    font-weight: $font-weight-bold;
+    color: $black-dark;
+    margin: 10px 0 16px;
+  }
+
+  &__text {
+    font-size: $font-size-base - 1;
+    line-height: 2.08;
+    color: $black-dark;
+  }
+}
+
+.text-icon-outer {
+  margin-bottom: 140px;
+}
+
+.mw-200 {
+  max-width: 410px;
+}
+
+.pr-90 {
+  padding-right: 90px;
+}
+
+.pr-40 {
+  padding-right: 40px;
+}
+
+.solution-box {
+  border-radius: $border-radius-base;
+  box-shadow: 0 20px 60px 0 rgba(49, 69, 244, .1);
+  background-color: $white;
+  padding: 40px 30px;
+
+  .icon-box__item {
+    padding-top: 0;
+    padding-bottom: 17px;
+  }
+
+  .icon-box__title {
+    font-size: $font-size-base + 2;
+  }
+
+  &__text {
+    font-size: $font-size-base - 1;
+    line-height: 2.08;
+    color: $black-darker;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+
+  &-outer {
+    padding: 10px;
+    width: 50%;
+  }
+
+  &-row {
+    margin: auto -10px;
+  }
 }
