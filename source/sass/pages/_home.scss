@@ -115,7 +115,7 @@
   }
 
   &-blog {
-    padding: 160px 0 237px;
+    padding: 160px 0 207px;
 
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
@@ -340,8 +340,8 @@
   }
 }
 
-.blog-list {
-  margin: 52px -10px 0;
+.content-list {
+  margin: 20px -10px 0;
   display: flex;
   flex-wrap: wrap;
 
@@ -350,11 +350,12 @@
   }
 
   &__item {
-    padding: 10px;
+    padding: 33px 10px;
     flex: 0 0 33.33%;
 
     @include respond-to(phone-and-down) {
       flex: 0 0 50%;
+      padding: 10px;
     }
 
     @include respond-to(smallphone-and-down) {

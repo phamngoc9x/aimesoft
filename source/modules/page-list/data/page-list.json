@@ -16,6 +16,14 @@
       {
         "title": "Service",
         "url": "service"
+      },
+      {
+        "title": "Products",
+        "url": "products"
+      },
+      {
+        "title": "Success",
+        "url": "success-stories"
       }
     ]
   }

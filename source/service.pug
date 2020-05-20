@@ -3,7 +3,7 @@ extends layout/_default
 block head
   +head('Aimesoft - Service')
 
-block main 
+block main
   .aime-hero-intro
   .aime-eco.bg-white-light
     .container
@@ -11,13 +11,13 @@ block main
       p.aime-text At Aimesoft, we provide end-to-end Multimodal AI integrated solutions across a wide range of industries such as Healthcare, Hospitality, Transportation, etc. In addition to  developing AI-powered products, we provide consulting services to enable companies to understand, evaluate and adopt Artificial Intelligence. With a team of dedicated and leading AI experts, we have assisted numerous enterprises to achieve breakthroughs in their development journey
   .aime-product
     .aime-container-mini
-      .col-sm-6.p-0
+      .col-md-6.p-0
         h2.aime-title.mb-3.mb-md-5 AI Consulting
-        img(src='http://via.placeholder.com/410x326.png', alt='icon').pt-2.mt-2
-      .col-sm-6.p-0
+        img(src='http://via.placeholder.com/410x326.png', alt='icon').pt-2.mt-2.mw-100.pr-0.pr-md-3.mb-4
+      .col-md-6.p-0
         h2.aime-title.mb-3.mb-md-5 AI Products
         .row
-          .col-sm-6
+          .col-md-6
             ul.icon-box.icon-box--outline
               -
                 var listIcon= ['AimeHotel', 'AimeReception', 'AimeCard', 'AimeAIshop', 'AimeStats', 'AimeSpeech']
@@ -26,7 +26,7 @@ block main
                   .icon-box__images
                     img(src='http://via.placeholder.com/40x40.png', alt='icon')
                   .icon-box__text=item
-          .col-sm-6
+          .col-md-6
             ul.icon-box.icon-box--outline
               -
                 var listIcon= ['AimeHospital', 'AimeFluent', 'AimeFace', 'Aimelytics']
@@ -40,7 +40,7 @@ block main
       .w-100
         h2.aime-title.mb-3.mb-md-5 Our key Expertise
         .row
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
@@ -51,7 +51,7 @@ block main
               li.text-list__item Understanding
               li.text-list__item Medical NLP
               li.text-list__item Search Engines
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
@@ -62,7 +62,7 @@ block main
             ul.text-list
               li.text-list__item Speech Recognition
               li.text-list__item Speech Synthesis
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
@@ -77,7 +77,7 @@ block main
               li.text-list__item 3D Modelling
               li.text-list__item Smart OCR
               li.text-list__item Image Synthesis
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
@@ -88,13 +88,13 @@ block main
               li.text-list__item KPI Prediction
               li.text-list__item Stock prediction
               li.text-list__item Recommender Systems
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
               .icon-box__content
                 .icon-box__title Text Mining
-          .col-sm-4
+          .col-sm-6.col-md-4
             .icon-box__item.d-flex
               .icon-box__images
                 img(src='http://via.placeholder.com/40x40.png', alt='icon')
@@ -103,7 +103,7 @@ block main
   .aime-process
     .aime-container-mini
       .w-100
-        h2.aime-title.mb-3.mb-md-5 Our process
+        h2.aime-title Our process
         ul.process-step
           li.process-step__item
             .row
@@ -190,3 +190,16 @@ block main
               .col-md-4
                 .text-icon Gather feedback & support
                 .text-icon Technology transfer
+      .w-100
+        h2.aime-title.mb-0.text-center Partners
+        .brand-logo.d-flex.flex-wrap.justify-content-between.align-items-center.mw-100
+          a(href='#').brand-logo__link
+            img(src='http://via.placeholder.com/87x19.png', alt='logo brand').brand-logo__item
+          a(href='#').brand-logo__link
+            img(src='http://via.placeholder.com/81x23.png', alt='logo brand').brand-logo__item
+          a(href='#').brand-logo__link
+            img(src='http://via.placeholder.com/116x44.png', alt='logo brand').brand-logo__item
+          a(href='#').brand-logo__link
+            img(src='http://via.placeholder.com/107x35.png', alt='logo brand').brand-logo__item
+          a(href='#').brand-logo__link
+            img(src='http://via.placeholder.com/180x24.png', alt='logo brand').brand-logo__item

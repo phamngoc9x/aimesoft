@@ -1,0 +1,35 @@
+// ======================================================
+// Pages :: Home
+// ======================================================
+
+.aime {
+  $root: &;
+
+  &-portfolio {
+    padding: 68px 0 50px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+  }
+
+  &-portfolio-list {
+    padding: 67px 0 164px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .btn-view-more {
+      margin: 60px 0 135px;
+
+      @include respond-to(phone-and-down) {
+        margin: 30px 0 50px;
+      }
+    }
+
+    .brand-logo {
+      padding-top: 58px;
+    }
+  }
+}

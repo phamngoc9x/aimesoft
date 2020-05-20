@@ -7,16 +7,46 @@
 
   &-product {
     padding: 85px 0 90px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
   }
 
   &-expertise {
     padding: 96px 0 110px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
   }
 
   &-process {
+    padding: 114px 0 160px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .brand-logo {
+      padding-top: 58px;
+    }
+
+    .aime-title {
+      margin-bottom: 121px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 10px;
+      }
+    }
+
     .icon-box__item {
       padding: 0;
       margin-bottom: 160px;
+
+      @include respond-to(phone-and-down) {
+        margin: 20px 0;
+      }
     }
 
     .icon-box__title {
@@ -74,5 +104,9 @@
     left: -5px;
     background-color: $black-darker;
     clip-path: polygon(100% 0, 0 0, 50% 100%);
+  }
+
+  @include respond-to(phone-and-down) {
+    display: none;
   }
 }
