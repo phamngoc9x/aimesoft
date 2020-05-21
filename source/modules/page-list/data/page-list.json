@@ -22,6 +22,10 @@
         "url": "products"
       },
       {
+        "title": "products detail",
+        "url": "products-detail"
+      },
+      {
         "title": "Success",
         "url": "success-stories"
       }

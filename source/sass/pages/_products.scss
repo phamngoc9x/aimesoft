@@ -9,22 +9,107 @@
 
     .aime-title {
       padding-bottom: 80px;
+
+      @include respond-to(phone-and-down) {
+        padding-bottom: 30px;
+      }
+    }
+
+    @include respond-to(phone-and-down) {
+      padding-top: 35px;
     }
   }
 
   &-our-solution {
     padding: 80px 0 210px;
 
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
     .aime-title {
       padding-bottom: 87px;
+
+      @include respond-to(phone-and-down) {
+        padding-bottom: 30px;
+      }
     }
   }
 
   &-our-brand {
     padding: 160px 0 164px;
 
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
     .brand-logo {
       padding-top: 58px;
+
+      @include respond-to(phone-and-down) {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  &-video {
+    padding-bottom: 161px;
+
+    &__content {
+      max-width: 760px;
+      margin: -180px auto 0;
+
+      .button-play {
+        transform: translate(-50%, -50%);
+        top: 50%;
+
+        .button-play__content {
+          background-color: $blue;
+        }
+      }
+    }
+
+    &__images {
+      border-radius: $border-radius-base + 8;
+      z-index: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .aime-title {
+      margin-top: 55px;
+      margin-bottom: 10px;
+    }
+
+    .aime-text {
+      font-size: $font-size-base - 1;
+      line-height: 2.08;
+    }
+  }
+
+  &-features {
+    .aime-title {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+
+    .icon-box__item {
+      flex: 0 0 50%;
+    }
+
+    .icon-box__text {
+      font-size: $font-size-base - 1;
+      line-height: 1.38;
+      color: $black-darker;
+      padding-right: 60px;
+    }
+  }
+
+  &-tech-detail {
+    padding: 148px 0 140px;
+
+    .aime-text {
+      margin-bottom: 60px;
     }
   }
 }
@@ -32,9 +117,14 @@
 .product-content {
   margin-bottom: 42px;
 
+  @include respond-to(phone-and-down) {
+    margin-bottom: 15px;
+  }
+
   &__left {
     position: relative;
     flex: 0 0 410px;
+    max-width: 50%;
     padding-right: 10px;
 
     .icon-box__images {
@@ -43,11 +133,28 @@
       right: 10px;
       background-color: $white;
     }
+
+    @include respond-to(smallphone-and-down) {
+      flex: 0 0 100%;
+      max-width: 410px;
+      padding-right: 0;
+    }
   }
 
   &__right {
     flex: 0 0 405px;
     padding-left: 25px;
+    max-width: 50%;
+
+    @include respond-to(tablet-and-down) {
+      padding-left: 10px;
+    }
+
+    @include respond-to(phone-and-down) {
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding-left: 0;
+    }
   }
 
   &__title {
@@ -66,18 +173,35 @@
 
 .text-icon-outer {
   margin-bottom: 140px;
+
+  @include respond-to(phone-and-down) {
+    margin-bottom: 35px;
+  }
 }
 
 .mw-200 {
   max-width: 410px;
+
+  @include respond-to(phone-and-down) {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 .pr-90 {
   padding-right: 90px;
+
+  @include respond-to(phone-and-down) {
+    padding-right: 10px;
+  }
 }
 
 .pr-40 {
   padding-right: 40px;
+
+  @include respond-to(phone-and-down) {
+    padding-right: 10px;
+  }
 }
 
 .solution-box {
@@ -85,6 +209,10 @@
   box-shadow: 0 20px 60px 0 rgba(49, 69, 244, .1);
   background-color: $white;
   padding: 40px 30px;
+
+  @include respond-to(phone-and-down) {
+    padding: 30px 20px;
+  }
 
   .icon-box__item {
     padding-top: 0;
@@ -106,9 +234,80 @@
   &-outer {
     padding: 10px;
     width: 50%;
+
+    @include respond-to(phone-and-down) {
+      width: 100%;
+    }
   }
 
   &-row {
     margin: auto -10px;
+  }
+}
+
+.tech-detail {
+  &__item {
+    flex: 0 0 50%;
+    padding: 40px  80px  40px 0;
+  }
+
+  &__title {
+    font-size: $font-size-base + 12;
+    font-weight: $font-weight-bold;
+    color: $black-dark;
+    margin-top: 20px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 6px;
+      border-radius: $border-radius-base;
+      background-color: $blue;
+      margin: 13px 0 24px;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-base + 1;
+    line-height: 1.6;
+    color: $gray-dark;
+  }
+}
+
+.bennefits-list {
+  max-width: 1065px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 33.33%;
+    padding: 0 40px;
+  }
+
+  &__content {
+    border-radius: $border-radius-base + 4;
+    box-shadow: 0 20px 60px 0 rgba(49, 69, 244, .1);
+    background-color: $white;
+    padding: 76px 40px 40px;
+    position: relative;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    color: $black-darker;
+  }
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: $border-radius-base;
+    background-color: $blue;
+    top: -82px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

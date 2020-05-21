@@ -1,0 +1,69 @@
+extends layout/_default
+
+block head
+  +head('Aimesoft - Products detail')
+
+block main
+  .aime-hero-intro
+  .aime-video
+    .aime-video__content
+      .aime-video__images
+        img(src='http://via.placeholder.com/780x356.png', alt='product').mw-100
+        button.button-play
+          .button-play__content
+            .button-play__icon
+      h2.aime-title Aime Hotel
+      p.aime-text Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
+  .aime-features.bg-white-light
+    .aime-container-mini
+      .row.w-100
+        .col-sm-8
+          h2.aime-title Features
+          ul.icon-box.d-flex.flex-wrap
+            -
+              var listIcon= ['Facial recognition, auto-greeting and customer’s information remembering', 'New knowledge enabling to improve the hotel’s virtual staff intelligence', 'Suggestions for hotel’s service and information ', 'Scalable software: Integrating a 3rd party server','Customer data statistics, user services personalization ']
+            each item in listIcon
+              li.icon-box__item.d-flex
+                .icon-box__images
+                  img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                .icon-box__text=item
+        .col-sm-4
+          img(src='http://via.placeholder.com/550x919.png', alt='product').images-right
+  .aime-tech-detail
+    .container
+      h2.aime-title.text-center Technologies
+      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI
+    .aime-container-mini
+      ul.tech-detail.d-flex.flex-wrap
+        li.tech-detail__item
+          .tech-detail__icon
+            img(src='http://via.placeholder.com/56x56.png', alt='product')
+          .tech-detail__title Natural language processing
+          .tech-detail__text Tokenization, POS tagging, keyword extraction, synonym/antonym detection, information extraction, relation extraction, semantic search, natural language understanding
+        li.tech-detail__item
+          .tech-detail__icon
+            img(src='http://via.placeholder.com/56x56.png', alt='product')
+          .tech-detail__title Image processing
+          .tech-detail__text Object recognition, semantic segmentation, face recognition, gender/age recognition, OCR (optical character recognition), image search/retrieval, predictive analytics based on image
+        li.tech-detail__item
+          .tech-detail__icon
+            img(src='http://via.placeholder.com/56x56.png', alt='product')
+          .tech-detail__title Speech processing
+          .tech-detail__text Language model extraction from Web text, acoustic model creation, hot word/trigger word detection, noise cancellation, ...
+        li.tech-detail__item
+          .tech-detail__icon
+            img(src='http://via.placeholder.com/56x56.png', alt='product')
+          .tech-detail__title Data processing
+          .tech-detail__text Big Data processing, KPI prediction, predictive analytics based on Big Data, recomendation algorithms, data generation for machine learning
+  .aime-benefits.bg-white-light
+    .container
+      h2.aime-title.text-center Benefits
+      p.aime-text.text-center Các giải pháp của Aimesoft dựa trên Trí tuệ nhân tạo đa thể thức
+    ul.bennefits-list
+      li.bennefits-list__item
+        .bennefits-list__content
+          .bennefits-list__icon.d-flex.align-items-center.justify-content-center
+            img(src='http://via.placeholder.com/54x54.png', alt='product')
+          .bennefits-list__text Thông tin về các sản phẩm dịch vụ đến gần hơn, sống động
+            br
+            |hơn đối với khách hàng
