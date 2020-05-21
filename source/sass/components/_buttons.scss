@@ -30,4 +30,17 @@
       color: darken($color: $blue, $amount: 10);
     }
   }
+
+  &--outline {
+    border-radius: $border-radius-base + 4;
+    border: solid 1px $white;
+    color: $white;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      color: $blue;
+      background-color: $white;
+    }
+  }
 }

@@ -55,9 +55,14 @@
   &-video {
     padding-bottom: 161px;
 
+    @include respond-to(phone-and-down) {
+      padding-bottom: 35px;
+    }
+
     &__content {
-      max-width: 760px;
+      max-width: 790px;
       margin: -180px auto 0;
+      padding: 0 15px;
 
       .button-play {
         transform: translate(-50%, -50%);
@@ -66,6 +71,10 @@
         .button-play__content {
           background-color: $blue;
         }
+      }
+
+      @include respond-to(phone-and-down) {
+        margin-top: 30px;
       }
     }
 
@@ -79,6 +88,10 @@
     .aime-title {
       margin-top: 55px;
       margin-bottom: 10px;
+
+      @include respond-to(phone-and-down) {
+        margin-top: 25px;
+      }
     }
 
     .aime-text {
@@ -91,10 +104,18 @@
     .aime-title {
       margin-top: 100px;
       margin-bottom: 50px;
+
+      @include respond-to(phone-and-down) {
+        margin: 35px 0 10px;
+      }
     }
 
     .icon-box__item {
       flex: 0 0 50%;
+
+      @include respond-to(smallphone-and-down) {
+        flex: 0 0 100%;
+      }
     }
 
     .icon-box__text {
@@ -103,6 +124,12 @@
       color: $black-darker;
       padding-right: 60px;
     }
+
+    .images-right {
+      @include respond-to(phone-and-down) {
+        max-width: 100%;
+      }
+    }
   }
 
   &-tech-detail {
@@ -110,6 +137,51 @@
 
     .aime-text {
       margin-bottom: 60px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+  }
+
+  &-benefits {
+    padding: 84px 0 196px;
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+
+    .aime-text {
+      margin-bottom: 60px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-request {
+    padding: 123px 0;
+
+    .aime-title {
+      color: $white;
+      margin-bottom: 40px;
+    }
+
+    .register-form__input {
+      border-radius: $border-radius-base + 4;
+      padding: 10px 20px;
+      height: 40px;
+      margin-bottom: 24px;
+      max-width: 300px;
+    }
+
+    @include respond-to(phone-and-down) {
+      padding: 50px 0;
     }
   }
 }
@@ -249,6 +321,14 @@
   &__item {
     flex: 0 0 50%;
     padding: 40px  80px  40px 0;
+
+    @include respond-to(tablet-and-down) {
+      padding: 20px 0;
+    }
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 100%;
+    }
   }
 
   &__title {
@@ -276,14 +356,24 @@
 }
 
 .bennefits-list {
-  max-width: 1065px;
+  max-width: 1105px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 
   &__item {
     flex: 0 0 33.33%;
-    padding: 0 40px;
+    padding: 45px 20px;
+    margin-top: 82px;
+
+    @include respond-to(phone-and-down) {
+      flex: 0 0 50%;
+      padding: 20px 15px;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      flex: 0 0 100%;
+    }
   }
 
   &__content {
@@ -292,6 +382,7 @@
     background-color: $white;
     padding: 76px 40px 40px;
     position: relative;
+    height: 100%;
   }
 
   &__text {
@@ -309,5 +400,8 @@
     top: -82px;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute;
   }
 }
+
+
