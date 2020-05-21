@@ -441,6 +441,10 @@
 
   button {
     position: absolute;
+    
+    &:focus {
+      outline: none;
+    }
 
     span {
       height: 40px;
