@@ -22,8 +22,16 @@
         "url": "products"
       },
       {
-        "title": "products detail",
+        "title": "Products detail",
         "url": "products-detail"
+      },
+      {
+        "title": "Blog",
+        "url": "blog"
+      },
+      {
+        "title": "Blog detail",
+        "url": "blog-detail"
       },
       {
         "title": "Success",
