@@ -4,8 +4,10 @@ block head
   +head('Aimesoft - About us')
 
 block main
-  +heroCarousel
+  .aime-hero-image
+    img(src="images/bg-about-us.png", alt="blog").w-100.mw-100
   .aime-about.bg-white-light
+    img.bg-bl.d-none.d-md-block(src="images/bg-c-04.png" alt="cover").w-31
     .aime-container-mini
       .aime-about__content
         h2.aime-title About us
@@ -79,7 +81,8 @@ block main
               .milestones-list__title 2020
               .milestones-list__text 2020/2 – AimeFace Japanese patent registration
               .milestones-list__text 2020/4 – Expands business to Korean market
-  .aime-achievement.bg-blue
+  .aime-achievement.bg-blue.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-05.png', alt='cover').w-31
     .aime-container-mini.justify-content-center
       h2.aime-title Achievement
     .aime-container-mini
@@ -96,7 +99,8 @@ block main
           .achievement-list__image.text-center
               img(src='./images/oval.png', alt='oval').mw-100
           .achievement-list__text More than 200 Multimodal AI real-world applications/solutions for various clients in Japan, UK, US and Korea
-  .aime-team.bg-white-light
+  .aime-team.bg-white-light.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-08.png', alt='cover').w-31
     .aime-container-mini.justify-content-center
       h2.aime-title Team BOD
     .aime-container-mini
@@ -126,7 +130,8 @@ block main
       h2.aime-title.aime-title-research AI research & development members
     .aime-container-mini.justify-content-center
       img(src='./images/key-member.png', alt='avatar').mw-100
-  .aime-brand
+  .aime-brand.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-07.png', alt='cover').w-31
     .aime-container-mini
       .w-100
         h2.aime-title.mb-0.text-center Partners

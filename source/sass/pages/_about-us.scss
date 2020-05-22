@@ -5,6 +5,11 @@
 .aime {
   &-about {
     padding-bottom: 172px;
+    position: relative;
+
+    .bg-bl {
+      bottom: -220px;
+    }
 
     @include respond-to(phone-and-down) {
       padding-bottom: 35px;
@@ -92,6 +97,10 @@
   &-team {
     padding: 144px 0 150px;
 
+    .bg-br {
+      bottom: auto;
+      top: 0;
+    }
 
     @include respond-to(phone-and-down) {
       padding: 40px 0;
@@ -119,6 +128,9 @@
   &-brand {
     padding: 79px 0 164px;
 
+    .bg-br {
+      bottom: -155px;
+    }
 
     @include respond-to(phone-and-down) {
       padding: 35px;
@@ -300,4 +312,8 @@
     color: #11223f;
     margin-top: 20px;
   }
+}
+
+.w-31 {
+  width: 31px;
 }
