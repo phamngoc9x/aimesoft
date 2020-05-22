@@ -3,8 +3,6 @@
 // ======================================================
 
 .aime {
-  $root: &;
-
   &-hero {
     background-color: $blue;
     position: relative;
@@ -172,7 +170,10 @@
 
   &-blog {
     padding: 160px 0 207px;
-    overflow: hidden;
+
+    &__content {
+      overflow: hidden;
+    }
 
     .bg-br {
       width: 30px;
