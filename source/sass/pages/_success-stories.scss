@@ -8,6 +8,11 @@
   &-portfolio {
     padding: 68px 0 50px;
 
+    .bg-tl {
+      width: 30px;
+      top: 160px;
+    }
+
     @include respond-to(phone-and-down) {
       padding: 35px 0;
     }
@@ -15,6 +20,11 @@
 
   &-portfolio-list {
     padding: 67px 0 164px;
+
+    .bg-br {
+      width: 30px;
+      bottom: -160px;
+    }
 
     @include respond-to(phone-and-down) {
       padding: 35px 0;
