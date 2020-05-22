@@ -14,8 +14,7 @@ mixin page-list(data)
             - if(ent.url == '')
                 a('#').page-list__link= ent.title
             - else
-                a(href=`${ent.url}.html`).page-list__link= ent.title
+                a(href=`${ent.url}.html` target='_blank').page-list__link= ent.title
           td
             - if(ent.url != '')
                 span.page-list__file-name= `${ent.url}.html`
-

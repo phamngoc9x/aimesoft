@@ -38,7 +38,7 @@
   }
 
   &-intro {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     padding-top: 116px;
 
     .bg-tl {
@@ -172,6 +172,7 @@
 
   &-blog {
     padding: 160px 0 207px;
+    overflow: hidden;
 
     .bg-br {
       width: 30px;
