@@ -1,14 +1,14 @@
 mixin footer(style)
   footer.footer
     .aime-container-mini
-      .row.w-100 
+      .row.w-100
         .col-sm-12.footer__info.text-center
-            a.footer__logo.d-inline(href='#') 
-              img(src='http://via.placeholder.com/185x32.png', alt='logo')
+            a.footer__logo.d-block.mx-auto(href='#')
+              img(src='images/logo-02.png', alt='logo')
         .col-sm-12
           .row
             .col-md-3
-              ul.list-link 
+              ul.list-link
                 li.list-link__item
                   a(href="#") Giải pháp
                 li.list-link__item
@@ -16,7 +16,7 @@ mixin footer(style)
                 li.list-link__item
                   a(href="#") Công nghệ
             .col-md-3
-              ul.list-link 
+              ul.list-link
                 li.list-link__item
                   a(href="#") Công nghệ
                 li.list-link__item
@@ -24,7 +24,7 @@ mixin footer(style)
                 li.list-link__item
                   a(href="#") Tin tức
             .col-md-3
-              ul.list-link 
+              ul.list-link
                 li.list-link__item
                   a(href="#") Liên hệ
                 li.list-link__item
@@ -32,48 +32,71 @@ mixin footer(style)
                 li.list-link__item
                   a(href="#") Chính sách bảo mật
             .col-md-3
-              ul.list-link 
+              ul.list-link
                 li.list-link__item
                   a(href="#") Social
               ul.list-social.d-flex.pt-1
                 li.list-social__item.pr-2.mr-3
                   a(href='#').list-social__link
-                    img(src='http://via.placeholder.com/32x32.png', alt='social')
+                    img(src='images/icon-fb.png', alt='social', title='facebook')
                 li.list-social__item.pr-2.mr-3
                   a(href='#').list-social__link
-                    img(src='http://via.placeholder.com/32x32.png', alt='social')
+                    img(src='images/icon-tw.png', alt='social', title='twitter')
                 li.list-social__item.pr-2.mr-3
                   a(href='#').list-social__link
-                    img(src='http://via.placeholder.com/32x32.png', alt='social')
+                    img(src='images/icon-in.png', alt='social', title='linkin')
                 li.list-social__item.pr-2.mr-3
                   a(href='#').list-social__link
-                    img(src='http://via.placeholder.com/32x32.png', alt='social')
+                    img(src='images/icon-sky.png', alt='social', title='skype')
     <hr class='footer__line'/>
       .aime-container-mini.justify-content-between
         ul.info-list
           li.info-list__item
             .info-list__icon
-              img(src='http://via.placeholder.com/14x20.png', alt='icon')
+              img.icon-pin(src='images/icon-pin.png', alt='icon')
             .info-list__text Tầng 3, toà nhà Hoàng Ngọc, số 4 ngõ 82 phố Dịch Vọng Hậu, Cầu Giấy, Hà Nội
           li.info-list__item
             .info-list__icon
-              img(src='http://via.placeholder.com/14x20.png', alt='icon')
-            .info-list__text 098-538-7426
+              img.icon-telephone(src='images/icon-telephone.png', alt='icon')
+            a(href='tel: 0985387426').info-list__text 098-538-7426
           li.info-list__item
             .info-list__icon
-              img(src='http://via.placeholder.com/14x20.png', alt='icon')
-            .info-list__text info@aimesoft.com
+              img.icon-mail(src='images/icon-mail.png', alt='icon')
+            a.info-list__text(href='mailto: info@aimesoft.com') info@aimesoft.com
         .footer__select
-          select.language-select
-            option.language-select__vi  Tiếng Việt
-            option.language-select__en  Tiếng Anh
-            option.language-select__jp  Tiếng Nhật
-            option.language-select__kr  Tiếng Hàn
-          
+          .dropdown.js-dropdown-language.dropdown-language
+            button#selectLanguage.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20")
+              .dropdown-select
+                .content
+                  img(src='images/flag-vn.png', alt='png')
+                  span Tiếng Việt
+            .dropdown-menu(aria-labelledby="selectLanguage")
+              a.dropdown-item(href='#')
+                .content
+                  img(src='images/flag-vn.png')
+                  span Tiếng Việt
+              a.dropdown-item(href='#')
+                .content
+                  img(src='images/flag-kingdom.png')
+                  span Tiếng Anh
+              a.dropdown-item(href='#')
+                .content
+                  img(src='images/flag-japan.png')
+                  span Tiếng Nhật
+              a.dropdown-item(href='#')
+                .content
+                  img(src='images/flag-korea.png')
+                  span Tiếng Hàn
+          //- select.language-select
+          //-   option.language-select__vi  Tiếng Việt
+          //-   option.language-select__en  Tiếng Anh
+          //-   option.language-select__jp  Tiếng Nhật
+          //-   option.language-select__kr  Tiếng Hàn
 
 
 
 
 
 
-            
+
+

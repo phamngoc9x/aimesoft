@@ -5,16 +5,16 @@ block head
 
 block main
   .aime-hero
-    img.bg-bl(src='images/bg-c-01.png', alt='cover')
+    img.bg-bl.d-none.d-md-block(src='images/bg-c-01.png', alt='cover')
     .container.position-relative
-      img.bg-tr(src='images/bg-c-02.png', alt='cover')
+      img.bg-tr.d-none.d-md-block(src='images/bg-c-02.png', alt='cover')
       h2.aime-hero__title Transform your business
         br
         |with the power of Multimodal AI
       .text-center
         img.aime-hero__cover(src='images/home_img_01.png', alt='cover')
   .aime-intro.position-relative
-    img.bg-tl(src='images/bg-c-03.png', alt='cover')
+    img.bg-tl.d-none.d-md-block(src='images/bg-c-03.png', alt='cover')
     .aime-container-mini
       .row
         .col-md-6.aime-intro__left
@@ -33,13 +33,13 @@ block main
         .col-md-6.aime-intro__right.pt-4.pt-md-0
           img(src='images/home_img_02.png', alt='img intro').mw-100
   .aime-ecosystem.position-relative
-    img.bg-br(src='images/bg-c-04.png', alt='cover')
+    img.bg-br.d-none.d-md-block(src='images/bg-c-04.png', alt='cover')
     .container.text-center
       h2.aime-title.mb-0 Aimenicon Ecosystem
       p.aime-text Aimenicorn is a Multimodal AI ecosystem developed by Aimesoft
       img.aime-ecosystem__cover(src='images/home_img_03.png', alt='img intro').mw-100
   .aime-technologies.position-relative
-    img.bg-bl(src='images/bg-c-04.png', alt='cover')
+    img.bg-bl.d-none.d-md-block(src='images/bg-c-04.png', alt='cover')
     .container.text-center
       h2.aime-title Technologies
       p.aime-text Aimesoft’s technologies to realize Multimodal AI
@@ -133,7 +133,8 @@ block main
             .services-step__text Evaluation
               br
               | & Support
-  .aime-more-info
+  .aime-more-info.position-relative
+    img.cover(src='images/home_img_04.png', alt='cover')
     .aime-container-mini
       .col-sm-5
         h2.aime-title.mb-3.mb-md-5 Our product
@@ -165,7 +166,8 @@ block main
           btnSize:'large',
           text:'XEM TẤT CẢ'
         }).mt-5.mw-157.d-inline-block
-  .aime-testimonial
+  .aime-testimonial.position-relative
+    img.bg-bl.d-none.d-lg-block(src='images/bg-c-05.png', alt='cover')
     .container
       h2.aime-title.text-center.color-white Success Stories
       .testimonial-slider
@@ -191,39 +193,41 @@ block main
               h3.testimonial-slider__name Eugenia Schultz
               span.testimonial-slider__position CEO, Amazon Cloud Service
               p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
-      .brand-logo.d-flex.flex-wrap.justify-content-between.align-items-center
+      .brand-logo.d-flex.flex-wrap.justify-content-center.justify-content-lg-between.align-items-center
         a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/87x19.png', alt='logo brand').brand-logo__item
+          img.brand-01(src='images/brand-01.png', alt='logo brand').brand-logo__item
         a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/81x23.png', alt='logo brand').brand-logo__item
+          img.brand-02(src='images/brand-02.png', alt='logo brand').brand-logo__item
         a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/116x44.png', alt='logo brand').brand-logo__item
+          img.brand-03(src='images/brand-03.png', alt='logo brand').brand-logo__item
         a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/107x35.png', alt='logo brand').brand-logo__item
+          img.brand-04(src='images/brand-04.png', alt='logo brand').brand-logo__item
         a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/180x24.png', alt='logo brand').brand-logo__item
-  .aime-blog
+          img.brand-05(src='images/brand-05.png', alt='logo brand').brand-logo__item
+  .aime-blog.position-relative
+    img.bg-tl.d-none.d-lg-block(src='images/bg-c-06.png', alt='cover')
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-06.png', alt='cover')
     h2.aime-title.text-center.mb-0 News & Blog
     .aime-container-mini
       ul.content-list
         li.content-list__item
           a(href='#').content-list__inner
             .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
+              img(src='images/blog-01.png', alt='blog').
             .content-list__info
               .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
               .content-list__date 12 Mar 2020
         li.content-list__item
           a(href='#').content-list__inner
             .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
+              img(src='images/blog-02.png', alt='blog').
             .content-list__info
               .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
               .content-list__date 12 Mar 2020
         li.content-list__item
           a(href='#').content-list__inner
             .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
+              img(src='images/blog-03.png', alt='blog').
             .content-list__info
               .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
               .content-list__date 12 Mar 2020
