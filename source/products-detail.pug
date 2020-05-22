@@ -4,32 +4,34 @@ block head
   +head('Aimesoft - Products detail')
 
 block main
-  .aime-hero-intro
+  +heroCarousel
   .aime-video
     .aime-video__content
       .aime-video__images
         img(src='http://via.placeholder.com/780x356.png', alt='product').mw-100
-        button.button-play
+        button.button-play.js-video-btn(type="button" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal")
           .button-play__content
             .button-play__icon
       h2.aime-title Aime Hotel
       p.aime-text Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
-  .aime-features.bg-white-light
-    .aime-container-mini
-      .row.w-sm-100
-        .col-md-8
-          h2.aime-title Features
-          ul.icon-box.d-flex.flex-wrap.mb-4
-            -
-              var listIcon= ['Facial recognition, auto-greeting and customer’s information remembering', 'New knowledge enabling to improve the hotel’s virtual staff intelligence', 'Suggestions for hotel’s service and information ', 'Scalable software: Integrating a 3rd party server','Customer data statistics, user services personalization ']
-            each item in listIcon
-              li.icon-box__item.d-flex
-                .icon-box__images
-                  img(src='http://via.placeholder.com/40x40.png', alt='icon')
-                .icon-box__text=item
-        .col-md-4
-          img(src='http://via.placeholder.com/550x919.png', alt='product').images-right
-  .aime-tech-detail
+  .aime-features.bg-white-light.d-flex.justify-content-end.position-relative
+    img.bg-bl.d-none.d-lg-block(src='images/bg-c-04.png', alt='cover')
+    img.cover(src='images/bg-product-detail-01.png', alt='product').images-right
+    .aime-features__wrap
+      .aime-container-mini
+        .row.w-sm-100
+          .col-md-8
+            h2.aime-title Features
+            ul.icon-box.d-flex.flex-wrap.mb-4
+              -
+                var listIcon= ['Facial recognition, auto-greeting and customer’s information remembering', 'New knowledge enabling to improve the hotel’s virtual staff intelligence', 'Suggestions for hotel’s service and information ', 'Scalable software: Integrating a 3rd party server','Customer data statistics, user services personalization ']
+              each item, i in listIcon
+                li.icon-box__item.d-flex
+                  .icon-box__images
+                    img(src=`images/feature-0${i + 1}.png`, alt='content')
+                  .icon-box__text=item
+  .aime-tech-detail.position-relative
+    img.bg-br(src='images/bg-c-04.png', alt='cover')
     .container
       h2.aime-title.text-center Technologies
       p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI
@@ -63,33 +65,33 @@ block main
       li.bennefits-list__item
         .bennefits-list__content
           .bennefits-list__icon.d-flex.align-items-center.justify-content-center
-            img(src='http://via.placeholder.com/54x54.png', alt='product')
+            img(src='images/feature-03.png', alt='product')
           .bennefits-list__text Thông tin về các sản phẩm dịch vụ đến gần hơn, sống động
             br
             |hơn đối với khách hàng
       li.bennefits-list__item
         .bennefits-list__content
           .bennefits-list__icon.d-flex.align-items-center.justify-content-center
-            img(src='http://via.placeholder.com/54x54.png', alt='product')
+            img(src='images/feature-02.png', alt='product')
           .bennefits-list__text hục vụ khách hàng nhanh chóng, tiện dụng ở tất cả các
             br
             |thời gian trong ngày, đáp ứng 24/7
       li.bennefits-list__item
         .bennefits-list__content
           .bennefits-list__icon.d-flex.align-items-center.justify-content-center
-            img(src='http://via.placeholder.com/54x54.png', alt='product')
+            img(src='images/feature-04.png', alt='product')
           .bennefits-list__text Khả năng phục vụ cá nhân hoá được phổ biến hơn
       li.bennefits-list__item
         .bennefits-list__content
           .bennefits-list__icon.d-flex.align-items-center.justify-content-center
-            img(src='http://via.placeholder.com/54x54.png', alt='product')
+            img(src='images/feature-05.png', alt='product')
           .bennefits-list__text Hỗ trợ các bộ phận nghiệp vụ trong khách sạn phục vụ
             br
             |khách hàng chu đáo hơn.
       li.bennefits-list__item
         .bennefits-list__content
           .bennefits-list__icon.d-flex.align-items-center.justify-content-center
-            img(src='http://via.placeholder.com/54x54.png', alt='product')
+            img(src='images/process-05.png', alt='product')
           .bennefits-list__text Khách hàng hài lòng với dịch vụ, trải nghiệm tốt » tăng
             br
             |doanh thu cho khách sạn
@@ -97,7 +99,7 @@ block main
     .aime-container-mini
       .row.w-sm-100
         .col-md-5.d-flex.align-items-center.justify-content-center
-          img(src='http://via.placeholder.com/250x250.png', alt='product').mw-100.mb-4
+          img(src='images/bg-product-detail-02.png', alt='product').mw-100.mb-4
         .col-md-7
           h2.aime-title Request a demo
           form.register-form
@@ -107,4 +109,5 @@ block main
               btnSize:'large',
               text:'REGISTER'
             })
-    
+
+  +modalVideo

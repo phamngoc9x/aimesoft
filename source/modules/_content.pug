@@ -41,3 +41,14 @@ mixin brandLogo
       img.brand-04(src='images/brand-04.png', alt='logo brand').brand-logo__item
     a(href='#').brand-logo__link
       img.brand-05(src='images/brand-05.png', alt='logo brand').brand-logo__item
+
+mixin modalVideo
+  #myModal.modal.modal-video.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg.modal-dialog-centered(role="document")
+      .modal-content
+        .modal-body
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+          // 16:9 aspect ratio
+          .embed-responsive.embed-responsive-16by9
+            iframe#video.embed-responsive-item(src="" allowscriptaccess="always" allow="autoplay")
