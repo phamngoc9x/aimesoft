@@ -47,3 +47,32 @@ a {
     color: $blue;
   }
 }
+
+.bg-bl {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  max-width: 100%;
+}
+
+.bg-br {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  max-width: 100%;
+}
+
+.bg-tr {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  max-width: 100%;
+}
+
+.bg-tl {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  max-width: 100%;
+}
+

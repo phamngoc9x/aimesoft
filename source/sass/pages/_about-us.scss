@@ -4,6 +4,8 @@
 
 .aime {
   &-about {
+    padding-bottom: 172px;
+
     @include respond-to(phone-and-down) {
       padding-bottom: 35px;
     }
@@ -26,6 +28,12 @@
         top: 56px;
         right: 52px;
       }
+
+      .images-bottom {
+        position: absolute;
+        bottom: 83px;
+        right: 53px;
+      }
     }
 
     &__text {
@@ -34,4 +42,13 @@
       margin-bottom: 25px;
     }
   }
+
+  &-milestones {
+    padding: 88px 0 90px;
+  }
+}
+
+.mw-700 {
+  max-width: 700px;
+  margin: 0 auto;
 }
