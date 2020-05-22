@@ -109,6 +109,12 @@
     padding: 116px 0 154px;
     background-color: $white-light;
 
+    @include respond-to(tablet-and-down) {
+      .services-step {
+        justify-content: center;
+      }
+    }
+
     @include respond-to(phone-and-down) {
       padding: 35px 0;
     }
@@ -124,6 +130,14 @@
 
   &-more-info {
     padding: 125px 0 134px;
+
+    .cover {
+      width: 37.8%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
     @include respond-to(phone-and-down) {
       padding: 35px 0;
@@ -142,6 +156,10 @@
     background-color: $blue;
     padding: 137px 0 161px;
 
+    .bg-bl {
+      width: 30px;
+    }
+
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
     }
@@ -154,6 +172,15 @@
 
   &-blog {
     padding: 160px 0 207px;
+
+    .bg-br {
+      width: 30px;
+      bottom: -156px;
+    }
+
+    .bg-tl {
+      width: 32px;
+    }
 
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
@@ -169,6 +196,7 @@
   &__item {
     flex: 0 0 50%;
     padding: 14px 10px;
+    position: relative;
 
     @include respond-to(smallphone-and-down) {
       flex: 0 0 100%;
@@ -381,6 +409,35 @@
   max-width: 740px;
   margin: 0 auto;
 
+  &__link {
+    display: inline-flex;
+    position: relative;
+
+    .brand-01 {
+      width: 87px;
+    }
+
+    .brand-02 {
+      width: 81px;
+    }
+
+    .brand-03 {
+      width: 116px;
+    }
+
+    .brand-04 {
+      width: 107px;
+    }
+
+    .brand-05 {
+      width: 170px;
+    }
+
+    @include respond-to(tablet-and-down) {
+      margin: 8px 10px;
+    }
+  }
+
   @include respond-to(tablet-and-down) {
     padding-top: 30px;
   }
@@ -399,6 +456,7 @@
     padding: 33px 10px;
     flex: 0 0 33.33%;
     width: 33.33%;
+    position: relative;
 
     @include respond-to(phone-and-down) {
       flex: 0 0 50%;

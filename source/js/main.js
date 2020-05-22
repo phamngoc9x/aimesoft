@@ -5,7 +5,16 @@ const AimesoftProject = {
     this.testimonialSlider();
     this.relatedSlider();
     this.isoTop();
-    
+    this.dropdownLanguage();
+  },
+
+  dropdownLanguage: function() {
+    $('.js-dropdown-language .dropdown-menu a').on('click', function(e) {
+      e.preventDefault();
+      const selectLanguage = $(this).html();
+
+      $('.js-dropdown-language .dropdown-select .content').html(selectLanguage);
+    })
   },
 
   onLoad: function () {
