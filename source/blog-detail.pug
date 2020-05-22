@@ -3,9 +3,10 @@ extends layout/_default
 block head
   +head('Aimesoft - Blog detail')
 
-block main 
-  .aime-hero-intro
-  .blog-detail
+block main
+  .aime-hero-image
+    img(src="images/bg-blog-01.png", alt="blog").w-100.mw-100
+  .blog-detail.bg-white-light
     .blog-detail__content
       ul.breadcrumb
         li.breadcrumb-item
@@ -26,36 +27,7 @@ block main
       p.blog-detail__text “It’s untrue that remanufactured toner cartridges can’t as good as OEM or will void the warranty,” says Business Express owner Dean Gutch. “By law OEMs can’t force you to buy their brand any more than a car dealer can force you to buy their oil filter. We’re so certain that Eclipse toner cartridges will meet or exceed OEM print quality that we guaranty not only the cartridge but also the printer.”
       p.blog-detail__text Business Express remanufactures OEM-compatible laser toner cartridges for most major brands including Hewlett Packard, Minolta, Lexmark, and others. In addition to color and black and white toner cartridges, the company offers Magnetic Ink Character Recognition (MICR) toner cartridges, suitable by banks to print checks. They also build custom cartridges for those with special needs.
       p.blog-detail__text In addition to remanufacturing to satisfy the latest OEM microchip requirements, they ship nationally with next day delivery as well as internationally.
-
-  .aime-blog
+  .aime-blog.bg-white-light.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-07.png', alt='cover').w-31.bg-br-bt
     h2.aime-title.text-center.mb-0 Related articles
-    .aime-container-mini.mw-970
-      ul.content-list.related-slider.owl-carousel.owl-theme
-        li.content-list__item
-          a(href='#').content-list__inner
-            .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
-            .content-list__info
-              .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
-              .content-list__date 12 Mar 2020
-        li.content-list__item
-          a(href='#').content-list__inner
-            .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
-            .content-list__info
-              .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
-              .content-list__date 12 Mar 2020
-        li.content-list__item
-          a(href='#').content-list__inner
-            .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
-            .content-list__info
-              .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
-              .content-list__date 12 Mar 2020
-        li.content-list__item
-          a(href='#').content-list__inner
-            .content-list__images
-              img(src='http://via.placeholder.com/300x177.png', alt='blog').
-            .content-list__info
-              .content-list__title Aimesoft tiên phong ứng dụng trí tuệ nhân tạo đa thể thức
-              .content-list__date 12 Mar 2020
+    +relatedSlider

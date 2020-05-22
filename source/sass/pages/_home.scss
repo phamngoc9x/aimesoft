@@ -185,6 +185,14 @@
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
     }
+
+    .btn-circle {
+      background-color: $white;
+
+      svg {
+        fill: $black-darker;
+      }
+    }
   }
 }
 
@@ -524,8 +532,7 @@
 }
 
 .owl-carousel .owl-stage-outer {
-  // overflow: visible;
-  padding: 0 20px;
+  overflow: visible;
 }
 
 .owl-item {
