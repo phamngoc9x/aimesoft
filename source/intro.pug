@@ -3,12 +3,14 @@ extends layout/_default
 block head
   +head('Aimesoft - Intro')
 
-block main 
-  .aime-hero-intro
-    .container
-      button.button-play
-        .button-play__content
-          .button-play__icon
+block main
+  .aime-hero-intro.position-relative
+    img(src='images/bg-intro-01.png', alt='cover')
+    .aime-hero-inner
+      .container
+        button.button-play
+          .button-play__content
+            .button-play__icon
   .aime-eco.bg-white-light
     .container
       h2.aime-title.text-center.pb-2 Aimenicon Ecosystem
@@ -19,7 +21,7 @@ block main
   .aime-technologies-intro
     .container
       h2.aime-title.text-center.pb-1 Technologies
-      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI 
+      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI
     .aime-container-mini
       ul.tech-list
         li.tech-list__item.d-flex.flex-wrap

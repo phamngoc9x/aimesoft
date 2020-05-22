@@ -6,11 +6,6 @@
   $root: &;
 
   &-hero-intro {
-    background-image: url('http://via.placeholder.com/1920x450.png');
-    height: 450px;
-    background-size: cover;
-    position: relative;
-
     .button-play {
       top: 50%;
       transform: translate(-50%, -50%);
