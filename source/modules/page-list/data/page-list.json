@@ -26,8 +26,16 @@
         "url": "products-detail"
       },
       {
+        "title": "About us",
+        "url": "about-us"
+      },
+      {
         "title": "Blog",
         "url": "blog"
+      },
+      {
+        "title": "Case study detail",
+        "url": "case-study-detail"
       },
       {
         "title": "Blog detail",
@@ -36,6 +44,10 @@
       {
         "title": "Success",
         "url": "success-stories"
+      },
+      {
+        "title": "Contact us",
+        "url": "contact-us"
       }
     ]
   }

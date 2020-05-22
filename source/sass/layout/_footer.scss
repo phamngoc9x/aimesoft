@@ -26,6 +26,15 @@
       margin: 20px 0 10px;
     }
   }
+
+  &__logo {
+    width: 137px;
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .list-link {
@@ -44,25 +53,25 @@
   }
 }
 
-.language-select {
-  border: 1px solid $blue;
-  padding: 9px 15px;
-  border-radius: $border-radius-base + 4;
-  color: $blue;
-  background-color: transparent;
+// .language-select {
+//   border: 1px solid $blue;
+//   padding: 9px 15px;
+//   border-radius: $border-radius-base + 4;
+//   color: $blue;
+//   background-color: transparent;
 
-  @include respond-to(tablet-and-down) {
-    margin-top: 15px;
-  }
+//   @include respond-to(tablet-and-down) {
+//     margin-top: 15px;
+//   }
 
-  &:focus {
-    outline: none;
-  }
+//   &:focus {
+//     outline: none;
+//   }
 
-  &__vi {
-    background-image: url('http://via.placeholder.com/18x18.png');
-  }
-}
+//   &__vi {
+//     background-image: url('http://via.placeholder.com/18x18.png');
+//   }
+// }
 
 .info-list {
   position: relative;
@@ -77,5 +86,84 @@
   &__icon {
     width: 20px;
     margin-right: 7px;
+
+    .icon-pin {
+      width: 15px;
+    }
+
+    .icon-telephone {
+      width: 14px;
+    }
+
+    .icon-mail {
+      width: 20px;
+    }
+  }
+
+  @include respond-to(tablet-and-down) {
+    margin: 0;
+  }
+}
+
+.list-social {
+  &__link {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.dropdown-language {
+  .dropdown-toggle {
+    border: 1px solid $blue;
+    padding: 9px 15px;
+    border-radius: $border-radius-base + 4;
+    color: $blue;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+      width: 18px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .dropdown-menu {
+    margin-left: -10px;
+    border: 1px solid $blue;
+    padding: 9px 0;
+    border-radius: $border-radius-base + 4;
+    color: $blue;
+    background-color: $white;
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: 4px 12px;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid rgba($black, .1);
+      }
+
+      img {
+        width: 18px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  @include respond-to(tablet-and-down) {
+    margin-top: 15px;
   }
 }
