@@ -64,7 +64,7 @@ const AimesoftProject = {
   },
   // Sticky menu
   isoTop: function () {
-    var elem = $('.aime-portfolio-list .content-list');
+    var elem = $('.aime-blog-list .content-list');
     var $iso = $(elem).isotope({
       itemSelector: '.content-list__item',
       layoutMode: 'fitRows',
@@ -118,4 +118,3 @@ $(window).on("load", function () {
 $(window).on("resize", function () {
   AimesoftProject.reSize();
 });
-

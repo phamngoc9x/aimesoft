@@ -46,9 +46,165 @@
   &-milestones {
     padding: 88px 0 90px;
   }
+
+  &-achievement {
+    padding: 94px 0 146px;
+
+    .aime-title {
+      color: $white;
+      margin-bottom: 34px;
+    }
+  }
+
+  &-team {
+    padding: 144px 0 150px;
+
+    .aime-title {
+      margin-bottom: 88px;
+    }
+
+    .aime-title-research {
+      margin-bottom: 78px;
+      margin-top: 204px;
+    }
+  }
 }
 
 .mw-700 {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.milestones-list {
+  $root: &;
+
+  width: 100%;
+  padding-right: 157px;
+
+  &__left {
+    margin-right: 30px;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 0;
+      background-color: $gray;
+      z-index: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    &:last-child {
+      .milestones-list__left {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__right {
+    padding-bottom: 64px;
+  }
+
+  &__circle {
+    height: 40px;
+    width: 40px;
+    border-radius: $border-radius-circle;
+    background-color: $blue;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    color: $black-darker;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $blue;
+    margin-bottom: 20px;
+    display: block;
+
+    &:hover {
+      color: darken($color: $blue, $amount: 10);
+    }
+  }
+}
+
+.achievement-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 33.33%;
+  }
+
+  &__text {
+    margin-top: 22px;
+    color: $white;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: $font-family-roboto;
+  }
+}
+
+.team-list {
+  display: flex;
+
+  &__item {
+    padding: 11px;
+    flex: 0 0 33.33%;
+    min-height: 551px;
+  }
+
+  &__content {
+    height: 100%;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px 0 rgba(49, 69, 244, .1);
+    padding: 60px 24px 30px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: $font-weight-bold;
+    line-height: 1.67;
+    text-align: center;
+    color: $black-darker;
+    margin-top: 20px;
+  }
+
+  &__position {
+    text-align: center;
+    color: #1967fa;
+    opacity: .8;
+  }
+
+  &__intro {
+    font-size: 13px;
+    line-height: 2.08;
+    color: #11223f;
+    margin-top: 20px;
+  }
 }
