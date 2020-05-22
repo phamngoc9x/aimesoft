@@ -1,0 +1,61 @@
+// ======================================================
+// Pages :: Contact
+// ======================================================
+
+.aime {
+  &-contact {
+    padding: 112px 0 94px;
+
+    .info-list {
+      margin-left: 0;
+    }
+
+    .aime-title {
+      margin-bottom: 24px;
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @include respond-to(phone-and-down) {
+      padding: 35px 0;
+    }
+  }
+}
+
+.contact-form {
+  @include respond-to(phone-and-down) {
+    padding-top: 20px;
+  }
+
+  &__control {
+    border-radius: 8px;
+    border: solid 1px $black-light;
+    background-color: $white;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 16px;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #aeaeae;
+    }
+
+    &:focus {
+      border-color: $blue;
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 102px;
+    padding: 10px 20px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    min-width: 140px;
+  }
+}
