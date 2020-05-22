@@ -31,6 +31,11 @@
   &-eco {
     padding: 68px 0 121px;
 
+    .bg-bl {
+      width: 30px;
+      bottom: -310px;
+    }
+
     &__content {
       max-width: 100%;
       width: 720px;
@@ -53,6 +58,13 @@
       @include respond-to(tablet-and-down) {
         margin-top: 25px;
       }
+    }
+  }
+
+  &-product {
+    .cover {
+      width: 410px;
+      max-width: 100%;
     }
   }
 
@@ -79,6 +91,20 @@
       @include respond-to(tablet-and-down) {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  &-expertise {
+    .bg-br {
+      width: 30px;
+      bottom: -110px;
+    }
+  }
+
+  &-process {
+    .bg-br {
+      width: 30px;
+      bottom: -160px;
     }
   }
 }

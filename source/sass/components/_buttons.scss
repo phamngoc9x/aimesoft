@@ -44,3 +44,35 @@
     }
   }
 }
+
+.btn-circle {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($white, 0);
+  transition: all .3s;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    width: 29px;
+    fill: $white;
+  }
+
+  &:hover {
+    background-color: rgba($white, .3);
+  }
+
+  &.carousel-control-prev {
+    left: 80px;
+  }
+
+  &.carousel-control-next {
+    right: 80px;
+  }
+}
