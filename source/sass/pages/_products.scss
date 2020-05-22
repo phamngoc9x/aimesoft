@@ -7,6 +7,11 @@
   &-our-product {
     padding-top: 68px;
 
+    .bg-br {
+      width: 30px;
+      bottom: -160px;
+    }
+
     .aime-title {
       padding-bottom: 80px;
 
@@ -38,6 +43,11 @@
 
   &-our-brand {
     padding: 160px 0 164px;
+
+    .bg-br {
+      width: 32px;
+      bottom: -160px;
+    }
 
     @include respond-to(phone-and-down) {
       padding: 35px 0;
