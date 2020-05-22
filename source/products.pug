@@ -4,16 +4,17 @@ block head
   +head('Aimesoft - Products')
 
 block main
-  .aime-hero-intro
-  .aime-our-product
+  +heroCarousel
+  .aime-our-product.position-relative
+    img.bg-br(src='images/bg-c-04.png', alt='cover')
     .aime-container-mini
       .w-100
         h2.aime-title.text-center Our  Product
       .product-content.d-flex.flex-wrap
         .product-content__left
-          img(src='http://via.placeholder.com/400x200.png', alt='product').mw-100
+          img(src='images/bg-product-01.png', alt='product').mw-100
           .icon-box__images
-            img(src='http://via.placeholder.com/40x40.png', alt='icon')
+            img(src='images/product-01.png', alt='icon')
         .product-content__right
           .product-content__title Aime Hotel
           .product-content__text "Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
@@ -21,17 +22,17 @@ block main
         .mw-200
           .pr-90
             .text-icon Facial recognition, auto-greeting and customer’s information remembering
-            .text-icon Suggestions for hotel’s service and information 
-            .text-icon Customer data statistics, user services personalization 
+            .text-icon Suggestions for hotel’s service and information
+            .text-icon Customer data statistics, user services personalization
         .mw-200
           .pr-40
             .text-icon New knowledge enabling to improve the hotel’s virtual staff intelligence
             .text-icon Scalable software: Integrating a 3rd party server
       .product-content.d-flex.flex-wrap
         .product-content__left
-          img(src='http://via.placeholder.com/400x200.png', alt='product').mw-100
+          img(src='images/bg-product-02.png', alt='product').mw-100
           .icon-box__images
-            img(src='http://via.placeholder.com/40x40.png', alt='icon')
+            img(src='images/product-01.png', alt='icon')
         .product-content__right
           .product-content__title Aime Hotel
           .product-content__text "Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
@@ -39,17 +40,17 @@ block main
         .mw-200
           .pr-90
             .text-icon Facial recognition, auto-greeting and customer’s information remembering
-            .text-icon Suggestions for hotel’s service and information 
-            .text-icon Customer data statistics, user services personalization 
+            .text-icon Suggestions for hotel’s service and information
+            .text-icon Customer data statistics, user services personalization
         .mw-200
           .pr-40
             .text-icon New knowledge enabling to improve the hotel’s virtual staff intelligence
             .text-icon Scalable software: Integrating a 3rd party server
       .product-content.d-flex.flex-wrap
         .product-content__left
-          img(src='http://via.placeholder.com/400x200.png', alt='product').mw-100
+          img(src='images/bg-product-03.png', alt='product').mw-100
           .icon-box__images
-            img(src='http://via.placeholder.com/40x40.png', alt='icon')
+            img(src='images/product-01.png', alt='icon')
         .product-content__right
           .product-content__title Aime Hotel
           .product-content__text "Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
@@ -57,17 +58,17 @@ block main
         .mw-200
           .pr-90
             .text-icon Facial recognition, auto-greeting and customer’s information remembering
-            .text-icon Suggestions for hotel’s service and information 
-            .text-icon Customer data statistics, user services personalization 
+            .text-icon Suggestions for hotel’s service and information
+            .text-icon Customer data statistics, user services personalization
         .mw-200
           .pr-40
             .text-icon New knowledge enabling to improve the hotel’s virtual staff intelligence
             .text-icon Scalable software: Integrating a 3rd party server
       .product-content.d-flex.flex-wrap
         .product-content__left
-          img(src='http://via.placeholder.com/400x200.png', alt='product').mw-100
+          img(src='images/bg-product-04.png', alt='product').mw-100
           .icon-box__images
-            img(src='http://via.placeholder.com/40x40.png', alt='icon')
+            img(src='images/product-01.png', alt='icon')
         .product-content__right
           .product-content__title Aime Hotel
           .product-content__text "Aimehotel is a program/software program developed to meet the high demands of customers during their stay at the hotel. This Multimodal AI-powered product combines various data resources (text, voice, photos, data) and smart processing algorithms.
@@ -75,8 +76,8 @@ block main
         .mw-200
           .pr-90
             .text-icon Facial recognition, auto-greeting and customer’s information remembering
-            .text-icon Suggestions for hotel’s service and information 
-            .text-icon Customer data statistics, user services personalization 
+            .text-icon Suggestions for hotel’s service and information
+            .text-icon Customer data statistics, user services personalization
         .mw-200
           .pr-40
             .text-icon New knowledge enabling to improve the hotel’s virtual staff intelligence
@@ -90,7 +91,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title AimeCard
             .solution-box__text "AimeCard is a software program that use Smart OSC technology. It can deliver highly accurate character recognition such as text, structure, the content of invoices, documents, identity cards, insurance cards, etc.
@@ -101,7 +102,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title AimeStats
             .solution-box__text "AimeCard is a software program that use Smart OSC technology. It can deliver highly accurate character recognition such as text, structure, the content of invoices, documents, identity cards, insurance cards, etc.
@@ -112,7 +113,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title Aimelytics
             .solution-box__text "AimeCard is a software program that use Smart OSC technology. It can deliver highly accurate character recognition such as text, structure, the content of invoices, documents, identity cards, insurance cards, etc.
@@ -123,7 +124,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title AimeFluent
             .solution-box__text "AimeCard is a software program that use Smart OSC technology. It can deliver highly accurate character recognition such as text, structure, the content of invoices, documents, identity cards, insurance cards, etc.
@@ -134,7 +135,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title Smart eye-wear
                   br
@@ -147,7 +148,7 @@ block main
           .solution-box
             .icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src='images/process-01.png', alt='icon')
               .icon-box__content
                 .icon-box__title Smart currency
                   br
@@ -156,18 +157,9 @@ block main
             .text-icon ID and identification papers recognition
             .text-icon Driving license and passport recognition
             .text-icon Invoices and documents recognition
-  .aime-our-brand
+  .aime-our-brand.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-07.png', alt='cover')
     .container
       h2.aime-title.mb-0.text-center Partners
-    .aime-container-mini 
-      .brand-logo.d-flex.flex-wrap.justify-content-between.align-items-center.mw-100.w-100
-        a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/87x19.png', alt='logo brand').brand-logo__item
-        a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/81x23.png', alt='logo brand').brand-logo__item
-        a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/116x44.png', alt='logo brand').brand-logo__item
-        a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/107x35.png', alt='logo brand').brand-logo__item
-        a(href='#').brand-logo__link
-          img(src='http://via.placeholder.com/180x24.png', alt='logo brand').brand-logo__item
+    .aime-container-mini
+      +brandLogo
