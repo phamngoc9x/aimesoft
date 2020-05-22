@@ -7,7 +7,7 @@
 
   &-hero {
     background-color: $blue;
-    height: 674px;
+    position: relative;
 
     &__title {
       font-size: $font-size-base + 34;
@@ -17,24 +17,45 @@
       color: $black-dark;
       font-weight: $font-weight-bold;
       padding-top: 59px;
+      margin-bottom: 42px;
+    }
+
+    &__cover {
+      max-width: 100%;
+      width: 627px;
+      margin-bottom: 40px;
+    }
+
+    .bg-bl {
+      width: 420px;
+    }
+
+    .bg-tr {
+      width: 66px;
+      top: 30px;
+      right: 120px;
     }
   }
 
   &-intro {
     padding-bottom: 50px;
+    padding-top: 116px;
+
+    .bg-tl {
+      width: 420px;
+      top: 5px;
+    }
 
     &__left {
-      padding-top: 150px;
-
-      @include respond-to(tablet-and-down) {
-        padding-top: 40px;
-      }
-
       .aime-text {
         margin-bottom: 36px;
         line-height: 1.71;
         padding-right: 72px;
       }
+    }
+
+    @include respond-to(tablet-and-down) {
+      padding-top: 40px;
     }
   }
 
@@ -42,8 +63,20 @@
     background-color: $white-light;
     padding: 56px 0 36px 0;
 
+    .bg-br {
+      bottom: -146px;
+      width: 30px;
+    }
+
     .aime-text {
-      margin-bottom: 30px;
+      max-width: 100%;
+      width: 424px;
+      margin: 0 auto 30px;
+    }
+
+    &__cover {
+      width: 450px;
+      max-width: 100%;
     }
 
     @include respond-to(phone-and-down) {
@@ -53,6 +86,11 @@
 
   &-technologies {
     padding: 92px 0 173px;
+
+    .bg-bl {
+      bottom: -146px;
+      width: 30px;
+    }
 
     @include respond-to(phone-and-down) {
       padding: 35px 0;
@@ -197,10 +235,10 @@
   &__content {
     background-color: $blue;
     border-radius: $border-radius-base + 4;
-    min-height: 245px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 20px 40px;
     position: relative;
+    height: 100%;
   }
 
   &__number {
@@ -215,6 +253,12 @@
     position: absolute;
     top: 20px;
     left: 20px;
+    width: 36px;
+    height: 36px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -236,11 +280,13 @@
     width: 60px;
     flex: 0 0 60px;
     margin-right: 20px;
-    background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: $border-radius-base;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -259,7 +305,6 @@
   &--outline {
     .icon-box__images {
       background-color: transparent;
-      border: solid .5px $gray;
     }
   }
 }

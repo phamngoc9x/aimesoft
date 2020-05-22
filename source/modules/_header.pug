@@ -3,8 +3,8 @@ mixin header(style)
     nav#navbar.navbar.navbar-expand-xl.header__content(data-spy='affix')
       .aime-container.justify-content-between.align-items-center
         .header-left
-          a.navbar-brand.header__logo(href='#') 
-            img(src='http://via.placeholder.com/185x32.png', alt='logo')
+          a.navbar-brand.header__logo(href='#')
+            img(src='images/logo.png', alt='logo')
           button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#menuToggle', aria-controls='menuToggle', aria-expanded='false', aria-label='Toggle navigation')
             span.nav-icon
             span.nav-icon
@@ -30,15 +30,14 @@ mixin header(style)
                 a.nav-link(href='#') Contact
             ul.language-list.d-flex
               li.language-list__item
-                a.language-list__link(href='#')
-                  img(src='http://via.placeholder.com/28x23.png', alt='flag')
+                a.language-list__link(href='#', title='viet nam')
+                  img(src='images/flag-vn.png', alt='flag')
               li.language-list__item
-                a.language-list__link(href='#')
-                  img(src='http://via.placeholder.com/28x23.png', alt='flag')
+                a.language-list__link(href='#', title='English')
+                  img(src='images/flag-kingdom.png', alt='flag')
               li.language-list__item
-                a.language-list__link(href='#')
-                  img(src='http://via.placeholder.com/28x23.png', alt='flag')
+                a.language-list__link(href='#', title='japanese')
+                  img(src='images/flag-japan.png', alt='flag')
               li.language-list__item
-                a.language-list__link(href='#')
-                  img(src='http://via.placeholder.com/28x23.png', alt='flag')
-            
+                a.language-list__link(href='#', title='korea')
+                  img(src='images/flag-korea.png', alt='flag')

@@ -3,16 +3,18 @@ extends layout/_default
 block head
   +head('Aimesoft - Home')
 
-block main 
+block main
   .aime-hero
-    .container
-      h2.aime-hero__title Transform your business 
+    img.bg-bl(src='images/bg-c-01.png', alt='cover')
+    .container.position-relative
+      img.bg-tr(src='images/bg-c-02.png', alt='cover')
+      h2.aime-hero__title Transform your business
         br
         |with the power of Multimodal AI
-      button.button-play
-        .button-play__content
-          .button-play__icon
-  .aime-intro
+      .text-center
+        img.aime-hero__cover(src='images/home_img_01.png', alt='cover')
+  .aime-intro.position-relative
+    img.bg-tl(src='images/bg-c-03.png', alt='cover')
     .aime-container-mini
       .row
         .col-md-6.aime-intro__left
@@ -29,22 +31,24 @@ block main
               text:'VỀ AIMESOFT'
             }).pl-2
         .col-md-6.aime-intro__right.pt-4.pt-md-0
-          img(src='http://via.placeholder.com/465x415.png', alt='img intro').mw-100
-  .aime-ecosystem
+          img(src='images/home_img_02.png', alt='img intro').mw-100
+  .aime-ecosystem.position-relative
+    img.bg-br(src='images/bg-c-04.png', alt='cover')
     .container.text-center
       h2.aime-title.mb-0 Aimenicon Ecosystem
-      p.aime-text Aimenicorn is a Multimodal AI ecosystem developed by Aimesoft 
-      img(src='http://via.placeholder.com/541x465.png', alt='img intro').mw-100
-  .aime-technologies
+      p.aime-text Aimenicorn is a Multimodal AI ecosystem developed by Aimesoft
+      img.aime-ecosystem__cover(src='images/home_img_03.png', alt='img intro').mw-100
+  .aime-technologies.position-relative
+    img.bg-bl(src='images/bg-c-04.png', alt='cover')
     .container.text-center
       h2.aime-title Technologies
-      p.aime-text Aimesoft’s technologies to realize Multimodal AI 
+      p.aime-text Aimesoft’s technologies to realize Multimodal AI
     .aime-container-mini
       ul.technologies-list
         li.technologies-list__item
           .technologies-list__content
             .technologies-list__images
-              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+              img(src='images/teach-01.png', alt='bg')
             .technologies-list__info
               .technologies-list__title Xử Lý Ảnh
               .technologies-list__text Phân mảnh, lý giải hình ảnh, nhận diện khuôn mặt, nhận diện tuổi, giới tính, nhận diện chữ viết, tìm kiếm dựa trên hình ảnh, phân tích dự đoán dựa trên ảnh
@@ -55,7 +59,7 @@ block main
         li.technologies-list__item
           .technologies-list__content
             .technologies-list__images
-              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+              img(src='images/teach-02.png', alt='bg')
             .technologies-list__info
               .technologies-list__title Xử lý ngôn ngữ tự nhiên
               .technologies-list__text Tách từ, gán nhãn từ loại, tìm từ khoá, từ gần nghĩa, cùng nghĩa, đối lập ngữ nghĩa, phân tích và trích xuất thông tin, trích xuất quan hệ, tìm kiếm dựa trên quan hệ, lý giải ngôn ngữ tự nhiên
@@ -66,7 +70,7 @@ block main
         li.technologies-list__item
           .technologies-list__content
             .technologies-list__images
-              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+              img(src='images/teach-03.png', alt='bg')
             .technologies-list__info
               .technologies-list__title Xử lý tiếng nói
               .technologies-list__text Xây dựng mô hình ngôn ngữ, mô hình âm học, tự động nhận diện hot word (trigger word), lọc nhiễu.
@@ -77,7 +81,7 @@ block main
         li.technologies-list__item
           .technologies-list__content
             .technologies-list__images
-              img(src='http://via.placeholder.com/460x170.png', alt='bg')
+              img(src='images/teach-04.png', alt='bg')
             .technologies-list__info
               .technologies-list__title Phân tích dữ liệu
               .technologies-list__text Thu thập và xử lý dữ liệu rất lớn, dự đoán KPI, phân tích dự đoán dựa trên dữ liệu lớn, tự động sinh dữ liệu cho học máy.
@@ -94,7 +98,7 @@ block main
         li.services-step__item
           .services-step__content
             .services-step__icon
-              img(src='http://via.placeholder.com/36x36.png', alt='step')
+              img(src='images/ai-s-01.png', alt='step')
             .services-step__number 1
             .services-step__text Discover and
               br
@@ -102,7 +106,7 @@ block main
         li.services-step__item
           .services-step__content
             .services-step__icon
-              img(src='http://via.placeholder.com/36x36.png', alt='step')
+              img(src='images/ai-s-02.png', alt='step')
             .services-step__number 2
             .services-step__text Consult
               br
@@ -110,59 +114,57 @@ block main
         li.services-step__item
           .services-step__content
             .services-step__icon
-              img(src='http://via.placeholder.com/36x36.png', alt='step')
+              img(src='images/ai-s-03.png', alt='step')
             .services-step__number 3
-            .services-step__text PoC 
+            .services-step__text PoC
               br
               |(Solutions and Analysis)
         li.services-step__item
           .services-step__content
             .services-step__icon
-              img(src='http://via.placeholder.com/36x36.png', alt='step')
+              img(src='images/ai-s-04.png', alt='step')
             .services-step__number 4
             .services-step__text Deployment
         li.services-step__item
           .services-step__content
             .services-step__icon
-              img(src='http://via.placeholder.com/36x36.png', alt='step')
+              img(src='images/ai-s-05.png', alt='step')
             .services-step__number 5
-            .services-step__text Evaluation 
+            .services-step__text Evaluation
               br
               | & Support
   .aime-more-info
     .aime-container-mini
-      .col-sm-4
+      .col-sm-5
         h2.aime-title.mb-3.mb-md-5 Our product
         ul.icon-box.icon-box--outline
           -
             var listIcon= ['AimeHotel', 'AimeReception', 'AimeAIshop', 'AimeHospital']
-          each item in listIcon
+          each item, i in listIcon
             li.icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src=`images/product-0${i + 1}.png`, alt='icon')
               .icon-box__text=item
         +buttons-link({
           btnType:'blue',
           btnSize:'large',
           text:'XEM TẤT CẢ'
         }).mt-5.mb-5.mw-157.d-inline-block
-      .col-sm-4
+      .col-sm-5
         h2.aime-title.mb-3.mb-md-5 Our solution
         ul.icon-box
           -
             var listIcon= ['AimeCard','Aimelytics','AimeStats','AimeFluent','AimeFace','AimeSpeech']
-          each item in listIcon
+          each item, i in listIcon
             li.icon-box__item.d-flex
               .icon-box__images
-                img(src='http://via.placeholder.com/40x40.png', alt='icon')
+                img(src=`images/solution-0${i + 1}.png`, alt='icon')
               .icon-box__text=item
         +buttons-link({
           btnType:'blue',
           btnSize:'large',
           text:'XEM TẤT CẢ'
         }).mt-5.mw-157.d-inline-block
-      .col-sm-4
-        img(src='http://via.placeholder.com/546x479.png', alt='icon').image-right
   .aime-testimonial
     .container
       h2.aime-title.text-center.color-white Success Stories
@@ -171,21 +173,21 @@ block main
           li.testimonial-slider__item
             .testimonial-slider__inner
               .testimonial-slider__images
-                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+                img(src='https://api.adorable.io/avatars/face/eyes4/nose3/mouth7/FFB6C1', alt='avatar')
               h3.testimonial-slider__name Eugenia Schultz
               span.testimonial-slider__position CEO, Amazon Cloud Service
               p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
           li.testimonial-slider__item
             .testimonial-slider__inner
               .testimonial-slider__images
-                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+                img(src='https://api.adorable.io/avatars/face/eyes3/nose1/mouth1/808000', alt='avatar')
               h3.testimonial-slider__name Eugenia Schultz
               span.testimonial-slider__position CEO, Amazon Cloud Service
               p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
           li.testimonial-slider__item
             .testimonial-slider__inner
               .testimonial-slider__images
-                img(src='http://via.placeholder.com/88x88.png', alt='avatar')
+                img(src='https://api.adorable.io/avatars/face/eyes1/nose2/mouth2/228B22', alt='avatar')
               h3.testimonial-slider__name Eugenia Schultz
               span.testimonial-slider__position CEO, Amazon Cloud Service
               p.testimonial-slider__say Certe, inquam, pertinax non emolumento aliquo, sed animo etiam erga nos amice et. Et quidem rerum facilis est et molestiae non existimant oportere exquisitis rationibus confirmare. Probabo, inquit, modo ista sis aequitate, quam ob aliquam quaerat voluptatem appetere eaque. Epicurus in sanguinem suum tam inportuno tamque crudeli; sin, ut aut fugit, sed.
