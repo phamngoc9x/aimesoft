@@ -79,6 +79,14 @@
     background-color: $white;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+  }
 }
 
 .bg {
@@ -97,4 +105,25 @@
 
 .mw-157 {
   min-width: 157px;
+}
+
+.modal-video {
+  .modal-body {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .close {
+    color: $white;
+    font-size: 36px;
+    opacity: 1;
+  }
 }

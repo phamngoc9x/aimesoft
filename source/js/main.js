@@ -6,15 +6,34 @@ const AimesoftProject = {
     this.relatedSlider();
     this.isoTop();
     this.dropdownLanguage();
+    this.modalVideo();
   },
 
-  dropdownLanguage: function() {
-    $('.js-dropdown-language .dropdown-menu a').on('click', function(e) {
+  modalVideo: function () {
+    var $videoSrc;
+    $(".js-video-btn").click(function () {
+      $videoSrc = $(this).data("src");
+    });
+
+    $("#myModal").on("shown.bs.modal", function (e) {
+      $("#video").attr(
+        "src",
+        $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+      );
+    });
+
+    $("#myModal").on("hide.bs.modal", function (e) {
+      $("#video").attr("src", $videoSrc);
+    });
+  },
+
+  dropdownLanguage: function () {
+    $(".js-dropdown-language .dropdown-menu a").on("click", function (e) {
       e.preventDefault();
       const selectLanguage = $(this).html();
 
-      $('.js-dropdown-language .dropdown-select .content').html(selectLanguage);
-    })
+      $(".js-dropdown-language .dropdown-select .content").html(selectLanguage);
+    });
   },
 
   onLoad: function () {
@@ -26,17 +45,17 @@ const AimesoftProject = {
   },
 
   testimonialSlider: function () {
-    $('.testimonial-slider').flipster({
-      style: 'flat',
+    $(".testimonial-slider").flipster({
+      style: "flat",
       spacing: -0.78,
-      itemContainer: 'ul',
-      itemSelector: 'li',
-      start: 'center',
+      itemContainer: "ul",
+      itemSelector: "li",
+      start: "center",
       loop: false,
       scrollwheel: false,
-      buttonPrev: 'Previous',
-      buttonNext: 'Next',
-      buttons: true
+      buttonPrev: "Previous",
+      buttonNext: "Next",
+      buttons: true,
     });
   },
 
@@ -64,47 +83,47 @@ const AimesoftProject = {
   },
   // Sticky menu
   isoTop: function () {
-    var elem = $('.aime-portfolio-list .content-list');
+    var elem = $(".aime-portfolio-list .content-list");
     var $iso = $(elem).isotope({
-      itemSelector: '.content-list__item',
-      layoutMode: 'fitRows',
-      category: '[data-category]',
+      itemSelector: ".content-list__item",
+      layoutMode: "fitRows",
+      category: "[data-category]",
     });
 
     // bind filter button click
-    $('.filters-block li').on( 'click', function() {
-      var filterValue = $( this ).attr('data-filter');
+    $(".filters-block li").on("click", function () {
+      var filterValue = $(this).attr("data-filter");
       // use filterFn if matches value
       $iso.isotope({ filter: filterValue });
-      console.log(filterValue)
+      console.log(filterValue);
     });
     // change is-checked class on buttons
-    $('.filters-block').each( function( i, buttonGroup ) {
-      var $buttonGroup = $('.filters-block');
-      $buttonGroup.on( 'click', '.filters-block__item', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
+    $(".filters-block").each(function (i, buttonGroup) {
+      var $buttonGroup = $(".filters-block");
+      $buttonGroup.on("click", ".filters-block__item", function () {
+        $buttonGroup.find(".is-checked").removeClass("is-checked");
+        $(this).addClass("is-checked");
       });
     });
   },
   relatedSlider: function () {
-    $('.related-slider').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:3
-          }
-      }
-    })
-  }
+    $(".related-slider").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 3,
+        },
+      },
+    });
+  },
 };
 
 $(document).ready(function () {
@@ -118,4 +137,3 @@ $(window).on("load", function () {
 $(window).on("resize", function () {
   AimesoftProject.reSize();
 });
-
