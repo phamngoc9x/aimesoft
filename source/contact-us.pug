@@ -4,8 +4,9 @@ block head
   +head('Aimesoft - Contact us')
 
 block main
-  .aime-hero-intro
-  .aime-contact
+  +heroCarousel
+  .aime-contact.position-relative
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-07.png', alt='cover')
     .aime-container-mini
       h2.aime-title Contact us
     .aime-container-mini
@@ -14,15 +15,15 @@ block main
           ul.info-list
             li.info-list__item
               .info-list__icon
-                img(src='http://via.placeholder.com/14x20.png', alt='icon')
+                img.icon-pin(src='images/icon-pin.png', alt='icon')
               .info-list__text Tầng 3, toà nhà Hoàng Ngọc, số 4 ngõ 82 phố Dịch Vọng Hậu, Cầu Giấy, Hà Nội
             li.info-list__item
               .info-list__icon
-                img(src='http://via.placeholder.com/14x20.png', alt='icon')
+                img.icon-telephone(src='images/icon-telephone.png', alt='icon')
               .info-list__text 098-538-7426
             li.info-list__item
               .info-list__icon
-                img(src='http://via.placeholder.com/14x20.png', alt='icon')
+                img.icon-mail(src='images/icon-mail.png', alt='icon')
               .info-list__text info@aimesoft.com
         .col-md-1
         .col-md-5
