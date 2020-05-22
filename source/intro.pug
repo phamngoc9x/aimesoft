@@ -3,28 +3,32 @@ extends layout/_default
 block head
   +head('Aimesoft - Intro')
 
-block main 
-  .aime-hero-intro
-    .container
-      button.button-play
-        .button-play__content
-          .button-play__icon
+block main
+  .aime-hero-intro.position-relative
+    img(src='images/bg-intro-01.png', alt='cover')
+    .aime-hero-inner
+      .container
+        button.button-play.js-video-btn(type="button" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal")
+          .button-play__content
+            .button-play__icon
   .aime-eco.bg-white-light
     .container
       h2.aime-title.text-center.pb-2 Aimenicon Ecosystem
       p.aime-text Multimodal AI combines multiple input sources (text, voice, image, numerical data, ...) and various intelligence algorithms into a single system to solve complicated problems and achieve high performance. These problems often cannot be solved with a single input source or a single processing algorithm.
     .aime-eco__content
       .container.text-center
-        img(src='http://via.placeholder.com/720x387.png', alt='eco').mw-100.aime-eco__image
-  .aime-technologies-intro
+        img(src='images/bg-intro-02.png', alt='eco').mw-100.aime-eco__image
+  .aime-technologies-intro.position-relative
+    img.bg-tl.d-none.d-lg-block(src='images/bg-c-06.png', alt='cover')
+    img.bg-br.d-none.d-lg-block(src='images/bg-c-06.png', alt='cover')
     .container
       h2.aime-title.text-center.pb-1 Technologies
-      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI 
+      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI
     .aime-container-mini
       ul.tech-list
         li.tech-list__item.d-flex.flex-wrap
           .tech-list__image.pr-0.pr-md-2
-            img(src='http://via.placeholder.com/460x260.png', alt='eco').mw-100
+            img(src='images/teach-01-02.png', alt='eco').mw-100
           .tech-list__content.text-left
             h3.tech-list__title Natural language processing
             p.tech-list__text Tokenization, POS tagging, keyword extraction, synonym/antonym detection, information extraction, relation extraction, semantic search, natural language understanding
@@ -33,10 +37,10 @@ block main
             h3.tech-list__title Image processing
             p.tech-list__text Object recognition, semantic segmentation, face recognition, gender/age recognition, OCR (optical character recognition), image search/retrieval, predictive analytics based on image
           .tech-list__image.pl-0.pl-md-2
-            img(src='http://via.placeholder.com/460x260.png', alt='eco').mw-100
+            img(src='images/teach-02-02.png', alt='eco').mw-100
         li.tech-list__item.d-flex.flex-wrap
           .tech-list__image.pr-0.pr-md-2
-            img(src='http://via.placeholder.com/460x260.png', alt='eco').mw-100
+            img(src='images/teach-03-02.png', alt='eco').mw-100
           .tech-list__content.text-left
             h3.tech-list__title Speech processing
             p.tech-list__text Language model extraction from Web text, acoustic model creation, hot word/trigger word detection, noise cancellation, ...
@@ -45,6 +49,14 @@ block main
             h3.tech-list__title Data processing
             p.tech-list__text Big Data processing, KPI prediction, predictive analytics based on Big Data, recomendation algorithms, data generation for machine learning
           .tech-list__image.pl-0.pl-md-2
-            img(src='http://via.placeholder.com/460x260.png', alt='eco').mw-100
+            img(src='images/teach-04-02.png', alt='eco').mw-100
 
-
+  #myModal.modal.modal-video.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg.modal-dialog-centered(role="document")
+      .modal-content
+        .modal-body
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+          // 16:9 aspect ratio
+          .embed-responsive.embed-responsive-16by9
+            iframe#video.embed-responsive-item(src="" allowscriptaccess="always" allow="autoplay")

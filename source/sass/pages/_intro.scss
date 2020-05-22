@@ -6,11 +6,6 @@
   $root: &;
 
   &-hero-intro {
-    background-image: url('http://via.placeholder.com/1920x450.png');
-    height: 450px;
-    background-size: cover;
-    position: relative;
-
     .button-play {
       top: 50%;
       transform: translate(-50%, -50%);
@@ -19,10 +14,28 @@
         background-color: rgba($color: $white, $alpha: .4);
       }
     }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-hero-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   &-eco {
     padding: 68px 0 121px;
+
+    &__content {
+      max-width: 100%;
+      width: 720px;
+      margin: 0 auto;
+    }
 
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
@@ -45,6 +58,16 @@
 
   &-technologies-intro {
     padding: 95px 0 135px;
+
+    .bg-tl {
+      width: 30px;
+      top: -100px;
+    }
+
+    .bg-br {
+      width: 30px;
+      bottom: -146px;
+    }
 
     @include respond-to(tablet-and-down) {
       padding: 35px 0;
