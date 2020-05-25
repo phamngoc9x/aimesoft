@@ -58,34 +58,34 @@ mixin footer(style)
           li.info-list__item
             .info-list__icon
               img.icon-telephone(src='images/icon-telephone.png', alt='icon')
-            a(href='tel: 0985387426').info-list__text 098-538-7426
+            a(href='tel:0985387426').info-list__text 098-538-7426
           li.info-list__item
             .info-list__icon
               img.icon-mail(src='images/icon-mail.png', alt='icon')
-            a.info-list__text(href='mailto: info@aimesoft.com') info@aimesoft.com
+            a.info-list__text(href='mailto:info@aimesoft.com') info@aimesoft.com
         .footer__select
           .dropdown.js-dropdown-language.dropdown-language
             button#selectLanguage.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20")
-              .dropdown-select
-                .content
+              span.dropdown-select
+                span.content
                   img(src='images/flag-vn.png', alt='png')
                   span Tiếng Việt
             .dropdown-menu(aria-labelledby="selectLanguage")
               a.dropdown-item(href='#')
                 .content
-                  img(src='images/flag-vn.png')
+                  img(src='images/flag-vn.png' alt='flag')
                   span Tiếng Việt
               a.dropdown-item(href='#')
                 .content
-                  img(src='images/flag-kingdom.png')
+                  img(src='images/flag-kingdom.png' alt='flag')
                   span Tiếng Anh
               a.dropdown-item(href='#')
                 .content
-                  img(src='images/flag-japan.png')
+                  img(src='images/flag-japan.png' alt='flag')
                   span Tiếng Nhật
               a.dropdown-item(href='#')
                 .content
-                  img(src='images/flag-korea.png')
+                  img(src='images/flag-korea.png' alt='flag')
                   span Tiếng Hàn
           //- select.language-select
           //-   option.language-select__vi  Tiếng Việt
