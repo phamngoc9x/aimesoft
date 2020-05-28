@@ -1,0 +1,38 @@
+extends layout/_default
+
+block head
+  +head('Aimesoft - Home')
+
+block main
+  .container(style='margin-top: 2em;')
+    .row
+      .col-lg-12
+        .input-group
+          input#scanner_input.form-control(placeholder='Click the button to scan an EAN...', type='text')
+          span.input-group-btn
+            button.btn.btn-default(type='button', data-toggle='modal', data-target='#livestream_scanner')
+              i.fa.fa-barcode button
+        // /input-group
+        // /.col-lg-6
+        // /.row
+        #livestream_scanner.modal
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+                h4.modal-title Barcode Scanner
+              .modal-body(style='position: static')
+                #interactive.viewport
+                .error
+              .modal-footer
+                label.btn.btn-default.pull-left
+                  i.fa.fa-camera
+                  |  Use camera app
+                  input.hidden(type='file', accept='image/*;capture=camera', capture='camera')
+                button.btn.btn-primary(type='button', data-dismiss='modal') Close
+            // /.modal-content
+            // /.modal-dialog
+            // /.modal
+    script
+      
