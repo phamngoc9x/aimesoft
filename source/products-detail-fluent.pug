@@ -1,7 +1,7 @@
 extends layout/_default
 
 block head
-  +head('Aimesoft - Products detail')
+  +head('Aimesoft - Products detail fluent')
 
 block main
   +heroCarousel
@@ -95,6 +95,23 @@ block main
           .bennefits-list__text Khách hàng hài lòng với dịch vụ, trải nghiệm tốt » tăng
             br
             |doanh thu cho khách sạn
+  .aime-live-demo.bg-white-light
+    .container
+      h2.aime-title.text-center Live demo
+      p.aime-text.text-center Aimesoft’s technologies to realize Multimodal AI
+      .upload-wrap.row
+        .col-lg-6
+          .box-img
+            .box-img-content
+              .icon-wrap.text-center.mb-5
+                img(src='images/icon-photo.png', alt='cover')
+              span.text-center.d-block.mb-4 Upload your image here
+              .upload-btn-wrap
+                input#file(type="file")
+                label(for="file") Choose image
+        .col-lg-6
+          .box-result
+      .col-lg-6
   .aime-request.bg-blue.position-relative
     img.bg-br.d-none.d-lg-block(src='images/bg-c-05.png', alt='cover').w-31
     img.bg-br.bg-br-02.d-none.d-lg-block(src='images/bg-c-08.png', alt='cover').w-31
