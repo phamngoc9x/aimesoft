@@ -26,6 +26,10 @@
         "url": "products-detail"
       },
       {
+        "title": "Products detail fluent",
+        "url": "products-detail-fluent"
+      },
+      {
         "title": "About us",
         "url": "about-us"
       },

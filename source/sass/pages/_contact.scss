@@ -6,11 +6,6 @@
   &-contact {
     padding: 112px 0 94px;
 
-    .bg-br {
-      width: 32px;
-      bottom: -160px;
-    }
-
     .info-list {
       margin-left: 0;
     }
@@ -20,6 +15,15 @@
 
       @include respond-to(phone-and-down) {
         margin-bottom: 10px;
+      }
+    }
+
+    &-map {
+      padding-bottom: 146px;
+
+      .bg-br {
+        width: 32px;
+        bottom: -160px;
       }
     }
 
