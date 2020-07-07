@@ -39,7 +39,7 @@
     "install": "^0.8.1",
     "jquery": "^3.5.0",
     "jstransformer-markdown-it": "^2.0.0",
-    "npm": "^6.13.4",
+    "npm": "^6.14.6",
     "pug": "^2.0.0-beta6",
     "run-sequence": "^1.2.2",
     "stylelint": "^8.4.0",
